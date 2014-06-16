@@ -1,0 +1,930 @@
+extends layout
+
+block content
+    each r, i in gamesresult
+        h1= r.username
+        table#games
+            thead
+                tr
+            tbody
+                tr
+                    td 
+                        img(src="images/BRA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Brazil"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 1
+                                a(href=game.url target="_blank")
+                                    p=r.game1BRA +" - "+r.game1CRO
+                    td#team2
+                        p="Croatia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CRO.svg.png" height="50" width="50")
+                
+                tr
+                    td 
+                        img(src="images/MEX.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Mexico"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 2
+                                a(href=game.url target="_blank")
+                                    p=r.game2MEX +" - "+r.game2CMR
+                    td#team2
+                        p="Cameroon"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CMR.svg.png" height="50" width="50")
+                
+                tr
+                    td 
+                        img(src="images/ESP.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Spain"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 3
+                                a(href=game.url target="_blank")
+                                    p=r.game3ESP +" - "+r.game3NED
+                    td#team2
+                        p="Netherlands"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/NED.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/CHI.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Chile"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 4
+                                a(href=game.url target="_blank")
+                                    p=r.game4CHI +" - "+r.game4AUS
+                    td#team2
+                        p="Australia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/AUS.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/COL.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Colombia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 5
+                                a(href=game.url target="_blank")
+                                    p=r.game5COL +" - "+r.game5GRE
+                    td#team2
+                        p="Greece"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/GRE.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/CIV.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Côte d'Ivoire"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 6
+                                a(href=game.url target="_blank")
+                                    p=r.game6CIV +" - "+r.game6JPN
+                    td#team2
+                        p="Japan"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/JPN.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/URU.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Uruguay"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 7
+                                a(href=game.url target="_blank")
+                                    p=r.game7URU +" - "+r.game7CRC
+                    td#team2
+                        p="Costa Rica"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CRC.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/ENG.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="England"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 8
+                                a(href=game.url target="_blank")
+                                    p=r.game8ENG +" - "+r.game8ITA
+                    td#team2
+                        p="Italy"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ITA.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/SUI.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Switzerland"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 9
+                                a(href=game.url target="_blank")
+                                    p=r.game9SUI +" - "+r.game9ECU
+                    td#team2
+                        p="Ecuador"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ECU.svg.png" height="50" width="50")
+                
+                
+
+                tr
+                    td 
+                        img(src="images/FRA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="France"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 10
+                                a(href=game.url target="_blank")
+                                    p=r.game10FRA +" - "+r.game10HON
+                    td#team2
+                        p="Honduras"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/HON.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ARG.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Argentina"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 11
+                                a(href=game.url target="_blank")
+                                    p=r.game11ARG +" - "+r.game11BIH
+                    td#team2
+                        p="Bosnia and Herzegovina"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/BIH.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/IRN.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Iran"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 12
+                                a(href=game.url target="_blank")
+                                    p=r.game12IRN +" - "+r.game12NGA
+                    td#team2
+                        p="Nigeria"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/NGA.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/GER.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Germany"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 13
+                                a(href=game.url target="_blank")
+                                    p=r.game13GER +" - "+r.game13POR
+                    td#team2
+                        p="Portugal"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/POR.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/GHA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Ghana"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 14
+                                a(href=game.url target="_blank")
+                                    p=r.game14GHA +" - "+r.game14USA
+                    td#team2
+                        p="USA"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/USA.svg.png" height="50" width="50")
+                
+
+                tr
+                    td 
+                        img(src="images/BEL.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Belgium"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 15
+                                a(href=game.url target="_blank")
+                                    p=r.game15BEL +" - "+r.game15ALG
+                    td#team2
+                        p="Algeria"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ALG.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/RUS.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Russia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 16
+                                a(href=game.url target="_blank")
+                                    p=r.game16RUS +" - "+r.game16KOR
+                    td#team2
+                        p="Korea Republic"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/KOR.svg.png" height="50" width="50")       
+
+                tr
+                    td 
+                        img(src="images/BRA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Brazil"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 17
+                                a(href=game.url target="_blank")
+                                    p=r.game17BRA +" - "+r.game17MEX
+                    td#team2
+                        p="Mexico"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/MEX.svg.png" height="50" width="50")         
+
+                tr
+                    td 
+                        img(src="images/CMR.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Cameroon"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 18
+                                a(href=game.url target="_blank")
+                                    p=r.game18CMR +" - "+r.game18CRO
+                    td#team2
+                        p="Croatia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CRO.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ESP.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Spain"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 19
+                                a(href=game.url target="_blank")
+                                    p=r.game19ESP +" - "+r.game19CHI
+                    td#team2
+                        p="Chile"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CHI.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/AUS.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Australia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 20
+                                a(href=game.url target="_blank")
+                                    p=r.game20AUS +" - "+r.game20NED
+                    td#team2
+                        p="Netherlands"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/NED.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/COL.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Colombia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 21
+                                a(href=game.url target="_blank")
+                                    p=r.game21COL +" - "+r.game21CIV
+                    td#team2
+                        p="Côte d'Ivoire"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CIV.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/JPN.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Japan"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 22
+                                a(href=game.url target="_blank")
+                                    p=r.game22JPN +" - "+r.game22GRE
+                    td#team2
+                        p="Greece"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/GRE.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/URU.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Uruguay"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 23
+                                a(href=game.url target="_blank")
+                                    p=r.game23URU +" - "+r.game23ENG
+                    td#team2
+                        p="England"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ENG.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ITA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Italy"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 24
+                                a(href=game.url target="_blank")
+                                    p=r.game24ITA +" - "+r.game24CRC
+                    td#team2
+                        p="Costa Rica"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CRC.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/SUI.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Switzerland"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 25
+                                a(href=game.url target="_blank")
+                                    p=r.game25SUI +" - "+r.game25FRA
+                    td#team2
+                        p="France"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/FRA.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/HON.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Honduras"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 26
+                                a(href=game.url target="_blank")
+                                    p=r.game26HON +" - "+r.game26ECU
+                    td#team2
+                        p="Ecuador"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ECU.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ARG.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Argentina"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 27
+                                a(href=game.url target="_blank")
+                                    p=r.game27ARG +" - "+r.game27IRN
+                    td#team2
+                        p="Iran"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/IRN.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/NGA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Nigeria"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 28
+                                a(href=game.url target="_blank")
+                                    p=r.game28NGA +" - "+r.game28BIH
+                    td#team2
+                        p="Bosnia and Herzegovina"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/BIH.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/GER.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Germany"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 29
+                                a(href=game.url target="_blank")
+                                    p=r.game29GER +" - "+r.game29GHA
+                    td#team2
+                        p="Ghana"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/GHA.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/USA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="USA"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 30
+                                a(href=game.url target="_blank")
+                                    p=r.game30USA +" - "+r.game30POR
+                    td#team2
+                        p="Portugal"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/POR.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/BEL.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Belgium"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 31
+                                a(href=game.url target="_blank")
+                                    p=r.game31BEL +" - "+r.game31RUS
+                    td#team2
+                        p="Russia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/RUS.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/KOR.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Korea Republic"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 32
+                                a(href=game.url target="_blank")
+                                    p=r.game32KOR +" - "+r.game32ALG
+                    td#team2
+                        p="Aleria"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ALG.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/CMR.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Cameroon"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 33
+                                a(href=game.url target="_blank")
+                                    p=r.game33CMR +" - "+r.game33BRA
+                    td#team2
+                        p="Brazil"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/BRA.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/CRO.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Croatia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 34
+                                a(href=game.url target="_blank")
+                                    p=r.game34CRO +" - "+r.game34MEX
+                    td#team2
+                        p="Mexico"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/MEX.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/AUS.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Australia"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 35
+                                a(href=game.url target="_blank")
+                                    p=r.game35AUS +" - "+r.game35ESP
+                    td#team2
+                        p="Spain"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ESP.svg.png" height="50" width="50")
+
+
+                tr
+                    td 
+                        img(src="images/NED.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Netherlands"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 36
+                                a(href=game.url target="_blank")
+                                    p=r.game36NED +" - "+r.game36CHI
+                    td#team2
+                        p="Chile"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CHI.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/JPN.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Japan"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 37
+                                a(href=game.url target="_blank")
+                                    p=r.game37JPN +" - "+r.game37COL
+                    td#team2
+                        p="Colombia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/COL.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/GRE.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Greece"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 38
+                                a(href=game.url target="_blank")
+                                    p=r.game38GRE +" - "+r.game38CIV
+                    td#team2
+                        p="Côte d'Ivoire"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/CIV.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ITA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Italy"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 39
+                                a(href=game.url target="_blank")
+                                    p=r.game39ITA +" - "+r.game39URU
+                    td#team2
+                        p="Uruguay"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/URU.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/CRC.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Costa Rica"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 40
+                                a(href=game.url target="_blank")
+                                    p=r.game40CRC +" - "+r.game40ENG
+                    td#team2
+                        p="England"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ENG.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/HON.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Honduras"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 41
+                                a(href=game.url target="_blank")
+                                    p=r.game41HON +" - "+r.game41SUI
+                    td#team2
+                        p="Switzerland"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/SUI.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ECU.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Ecuador"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 42
+                                a(href=game.url target="_blank")
+                                    p=r.game42ECU +" - "+r.game42FRA
+                    td#team2
+                        p="France"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/FRA.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/NGA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Nigeria"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 43
+                                a(href=game.url target="_blank")
+                                    p=r.game43NGA +" - "+r.game43ARG
+                    td#team2
+                        p="Argentina"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/ARG.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/BIH.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Bosnia and Herzegovina"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 44
+                                a(href=game.url target="_blank")
+                                    p=r.game44BIH +" - "+r.game44IRN
+                    td#team2
+                        p="Iran"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/IRN.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/USA.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="USA"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 45
+                                a(href=game.url target="_blank")
+                                    p=r.game45USA +" - "+r.game45GER
+                    td#team2
+                        p="Germany"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/GER.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/POR.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Portugal"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 46
+                                a(href=game.url target="_blank")
+                                    p=r.game46POR +" - "+r.game46GHA
+                    td#team2
+                        p="Ghana"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/GHA.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/KOR.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Korea Republic"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 47
+                                a(href=game.url target="_blank")
+                                    p=r.game47KOR +" - "+r.game47BEL
+                    td#team2
+                        p="Belgium"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/BEL.svg.png" height="50" width="50")
+
+                tr
+                    td 
+                        img(src="images/ALG.svg.png" height="50" width="50")
+                    td(style="width: 20px")
+                            &nbsp;
+                    td#team1
+                        p="Algeria"
+                    td#result
+                        each game, g in games
+                            if game.match_id == 48
+                                a(href=game.url target="_blank")
+                                    p=r.game48ALG +" - "+r.game48RUS
+                    td#team2
+                        p="Russia"
+                    td(style="width: 20px")
+                            &nbsp;
+                    td 
+                        img(src="images/RUS.svg.png" height="50" width="50")

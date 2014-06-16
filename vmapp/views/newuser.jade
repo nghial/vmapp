@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+    form(name="adduser", method="post", action="/adduser")
+        fieldset
+            div
+                label(for="inputUserName") Username:
+                input(id="inputUserName", type="text", placeholder="username", name="username")
+            div
+                label(for="inputUserEmail") Email: 
+                input(id="inputUserEmail", type="text", placeholder="useremail", name="useremail")
+            div
+                button(type="submit") submit

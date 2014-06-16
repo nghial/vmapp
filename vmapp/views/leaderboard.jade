@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    div
+        h1. Altinn World Cup LEADERBOARD after the 13th match
+    br
+    div
+        table#leaderboard(class="bordered")
+            thead
+                tr
+                    th #
+                    th Username
+                    th Points
+            each entry, i in leaderboard
+                tr
+                    td= i+1
+                    td
+                        a(href="/gamesresult?id=" + entry.uuid, id="linkToUser")
+                            p=entry.name
+                    td 
+                        p=entry.points

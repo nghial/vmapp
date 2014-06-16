@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div
+        label Name:
+        input(type="text" ng-model="yourName" placeholder="Enter a name here")
+        input(type="text" ng-model="yourName2" placeholder="Enter a name here")
+        hr
+        h1. Hello {{yourName}}-{{yourName2}}
+    br
+    div
+        p gamesskeleton2
+        each game, i in gamesskeleton2
+            p= game.team1_code + " - " + game.team2_code
+    div
+        p gamesskeleton
+        each game, i in gamesskeleton
+            if (game && game.match_id > 0)
+                //img(src="images/" + game.team1_code + ".svg.png")
+                p= 'inputmatchpred' + game.match_id + game.team1_code
+                p= 'inputmatchpred' + game.match_id + game.team2_code
+    
+    

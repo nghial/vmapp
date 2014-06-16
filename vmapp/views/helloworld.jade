@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Hello, World! Welcome to #{title}
+
+  div(class="container")
+    div(class="page-header text-center")
+        h1 Profile Page
+            span(class="fa fa-anchor")
+        a(href="/logout" class="btn btn-default btn-sm") Logout
+    div(class="row")
+        div(class="col-sm-6")
+            div(class="well")
+              span(class="fa fa-user")
+                  p= user._id
+                  p= user.local.email

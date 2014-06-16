@@ -1,0 +1,145 @@
+body {
+  padding: 50px;
+  font: 14px "trebuchet MS", "Lucida sans", Arial;
+  background-image: url(../img/grey.png);
+}
+
+a {
+  color: #00B7FF;
+}
+
+#nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	display: inline;
+	margin: 5px;
+}
+
+#nav li a:link, #nav li a:visited{
+	color:#FFFFFF; 
+	background-color:#B4CDCD; 
+	text-align:center; 
+	padding:6px; 
+	text-decoration:none; 
+}
+
+#nav li a:hover{
+	background-color:#7A8B8B;
+}
+
+#nav li a:active{
+	background-color:#7A8B8B;
+}
+
+#leaderboard {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 70%;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #B4CDCD;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#B4CDCD));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #B4CDCD);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #B4CDCD);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #B4CDCD);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #B4CDCD);
+    background-image:         linear-gradient(top, #ebf3fc, #B4CDCD);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+#games tr:hover {
+    background-color: #D3D3D3;
+}
+
+#games td{
+    font-size: 19px;
+}
+
+#games #team1 {
+    text-align: left;
+    width:200px;
+    padding-top: 10px;
+}
+
+#games #team2 {
+    text-align: right;
+    width:200px;
+    padding-top: 10px;
+}
+
+#games #result {
+    padding-top: 10px;
+}
+
+.bordered td {
+    background-color: white;
+}

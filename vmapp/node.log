@@ -1,0 +1,2567 @@
+[90mGET / [36m304 [90m38ms[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m6ms[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mGET /login [32m200 [90m53ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m208ms - 68b[0m
+[90mGET /games [36m302 [90m17ms - 78b[0m
+TypeError: /home/azureuser/www/vmapp/vmapp/views/gamesresult.jade:4
+    2| 
+    3| block content
+  > 4|     each r, i in gamesresult
+    5|         h1= r.username
+    6|         table
+    7|             thead
+
+Cannot read property 'length' of undefined
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:128:31)
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:7227:4)
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:7234:21)
+    at res (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:173:38)
+    at Object.exports.render (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:269:10)
+    at Object.exports.renderFile (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:305:18)
+    at View.exports.renderFile [as engine] (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:290:21)
+    at View.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/view.js:76:8)
+    at Function.app.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/application.js:502:10)
+    at ServerResponse.res.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/response.js:777:7)
+[90mGET /gamesresult [31m500 [90m1289ms - 1.35kb[0m
+[90mGET /login [32m200 [90m74ms - 1.44kb[0m
+[90mPOST /login [36m302 [90m186ms - 68b[0m
+[90mGET /games [36m302 [90m16ms - 78b[0m
+TypeError: /home/azureuser/www/vmapp/vmapp/views/gamesresult.jade:4
+    2| 
+    3| block content
+  > 4|     each r, i in gamesresult
+    5|         h1= r.username
+    6|         table
+    7|             thead
+
+Cannot read property 'length' of undefined
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:128:31)
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:7227:4)
+    at eval (eval at <anonymous> (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:172:8), <anonymous>:7234:21)
+    at res (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:173:38)
+    at Object.exports.render (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:269:10)
+    at Object.exports.renderFile (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:305:18)
+    at View.exports.renderFile [as engine] (/home/azureuser/www/vmapp/vmapp/node_modules/jade/lib/jade.js:290:21)
+    at View.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/view.js:76:8)
+    at Function.app.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/application.js:502:10)
+    at ServerResponse.res.render (/home/azureuser/www/vmapp/vmapp/node_modules/express/lib/response.js:777:7)
+[90mGET /gamesresult [31m500 [90m1310ms - 1.35kb[0m
+[90mGET /login [32m200 [90m49ms - 1.44kb[0m
+js-bson: Failed to load c++ bson extension, using pure JS version
+The magic happens on port 80
+[90mGET /login [36m304 [90m576ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m3ms[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mPOST /login [36m302 [90m250ms - 68b[0m
+Failed to load c++ bson extension, using pure JS version
+[90mGET /games [36m302 [90m226ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1354ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m3ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m2ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m4ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m3ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m2ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m2ms[0m
+[90mGET /leaderboard [32m200 [90m145ms - 7.27kb[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [32m200 [90m1436ms - 8.65kb[0m
+[90mGET /javascripts/script.js [36m304 [90m4ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m2ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m3ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m2ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m4ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m3ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=5155b84d-92bb-401a-9697-1368d83d36cc [32m200 [90m1334ms - 8.65kb[0m
+[90mGET /javascripts/script.js [36m304 [90m4ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m4ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m4ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m4ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m4ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m3ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m302 [90m2ms - 58b[0m
+[90mGET / [32m200 [90m74ms - 1.25kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /login [36m304 [90m76ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m195ms - 68b[0m
+[90mGET /games [36m302 [90m24ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1314ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m7ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m6ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m7ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m6ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m4ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m4ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m4ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m6ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m6ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m6ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m6ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m3ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m3ms[0m
+[90mGET /leaderboard [32m200 [90m79ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m122ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m94ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m2ms[0m
+[90mGET /logout [36m302 [90m2ms - 35b[0m
+[90mGET / [36m304 [90m94ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m3ms[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /login [36m304 [90m48ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m187ms - 40b[0m
+[90mGET /games [36m302 [90m32ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1365ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [32m200 [90m6ms - 648b[0m
+[90mGET /images/CRO.svg.png [32m200 [90m3ms - 277b[0m
+[90mGET /images/MEX.svg.png [32m200 [90m0ms - 298b[0m
+[90mGET /images/CMR.svg.png [32m200 [90m1ms - 226b[0m
+[90mGET /images/ESP.svg.png [32m200 [90m1ms - 310b[0m
+[90mGET /images/NED.svg.png [32m200 [90m1ms - 118b[0m
+[90mGET /images/CHI.svg.png [32m200 [90m1ms - 208b[0m
+[90mGET /images/AUS.svg.png [32m200 [90m1ms - 504b[0m
+[90mGET /images/COL.svg.png [32m200 [90m3ms - 135b[0m
+[90mGET /images/GRE.svg.png [32m200 [90m1ms - 248b[0m
+[90mGET /images/CIV.svg.png [32m200 [90m1ms - 120b[0m
+[90mGET /images/JPN.svg.png [32m200 [90m2ms - 335b[0m
+[90mGET /images/URU.svg.png [32m200 [90m0ms - 323b[0m
+[90mGET /images/CRC.svg.png [32m200 [90m1ms - 150b[0m
+[90mGET /images/ENG.svg.png [32m200 [90m1ms - 163b[0m
+[90mGET /images/ITA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/SUI.svg.png [32m200 [90m0ms - 166b[0m
+[90mGET /images/ECU.svg.png [32m200 [90m1ms - 352b[0m
+[90mGET /images/FRA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/HON.svg.png [32m200 [90m0ms - 217b[0m
+[90mGET /images/ARG.svg.png [32m200 [90m1ms - 239b[0m
+[90mGET /images/BIH.svg.png [32m200 [90m1ms - 379b[0m
+[90mGET /images/IRN.svg.png [32m200 [90m1ms - 319b[0m
+[90mGET /images/NGA.svg.png [32m200 [90m0ms - 125b[0m
+[90mGET /images/GER.svg.png [32m200 [90m1ms - 124b[0m
+[90mGET /images/POR.svg.png [32m200 [90m1ms - 404b[0m
+[90mGET /images/GHA.svg.png [32m200 [90m0ms - 222b[0m
+[90mGET /images/USA.svg.png [32m200 [90m1ms - 401b[0m
+[90mGET /images/BEL.svg.png [32m200 [90m1ms - 127b[0m
+[90mGET /images/ALG.svg.png [32m200 [90m1ms - 373b[0m
+[90mGET /images/RUS.svg.png [32m200 [90m0ms - 118b[0m
+[90mGET /images/KOR.svg.png [32m200 [90m1ms - 605b[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m62ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m101ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mGET /gamesresult?id=889abf35-8c15-492e-b2ba-74c4f68c283b [36m302 [90m2ms - 58b[0m
+[90mGET / [36m304 [90m48ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /login [32m200 [90m90ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m191ms - 68b[0m
+[90mGET /games [36m302 [90m23ms - 78b[0m
+[90mGET /gamesresult [36m304 [90m1214ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m23ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m7ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m104ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=889abf35-8c15-492e-b2ba-74c4f68c283b [32m200 [90m1459ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m5ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m5ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m4ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m4ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m3ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m3ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m3ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=16e85615-c399-4baf-bc6f-ef7fe145568a [32m200 [90m1370ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m2ms[0m
+[90mGET / [36m304 [90m63ms[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mGET /leaderboard [32m200 [90m106ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m3ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=439e42d4-b2af-48b3-af4e-908e0860553f [36m302 [90m2ms - 58b[0m
+[90mGET / [36m304 [90m69ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m66ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [32m200 [90m1343ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m3ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m198ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=2b32401c-a801-42b9-8fcf-9478fbef1949 [32m200 [90m1344ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m121ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=5155b84d-92bb-401a-9697-1368d83d36cc [32m200 [90m1425ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m76ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m53ms[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [32m200 [90m1ms - 44.47kb[0m
+[90mGET /login [36m304 [90m63ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m201ms - 40b[0m
+[90mGET /games [36m302 [90m20ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1258ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m133ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=e17cd201-4e38-4bfb-a505-7e66b4586278 [32m200 [90m1367ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m102ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1348ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m9ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m4ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m3ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m186ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [36m304 [90m1365ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /logout [36m302 [90m5ms - 58b[0m
+[90mGET / [36m304 [90m63ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m52ms - 1.25kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.8kb[0m
+[90mGET /javascripts/script.js [32m200 [90m1ms - 930b[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mGET /login [32m200 [90m87ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m189ms - 68b[0m
+[90mGET /games [36m302 [90m26ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1290ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [32m200 [90m1ms - 648b[0m
+[90mGET /images/CRO.svg.png [32m200 [90m2ms - 277b[0m
+[90mGET /images/MEX.svg.png [32m200 [90m1ms - 298b[0m
+[90mGET /images/CMR.svg.png [32m200 [90m3ms - 226b[0m
+[90mGET /images/ESP.svg.png [32m200 [90m1ms - 310b[0m
+[90mGET /images/NED.svg.png [32m200 [90m1ms - 118b[0m
+[90mGET /images/CHI.svg.png [32m200 [90m1ms - 208b[0m
+[90mGET /images/GRE.svg.png [32m200 [90m1ms - 248b[0m
+[90mGET /images/CIV.svg.png [32m200 [90m1ms - 120b[0m
+[90mGET /images/IRN.svg.png [32m200 [90m1ms - 319b[0m
+[90mGET /images/ARG.svg.png [32m200 [90m1ms - 239b[0m
+[90mGET /images/ECU.svg.png [32m200 [90m0ms - 352b[0m
+[90mGET /images/BIH.svg.png [32m200 [90m1ms - 379b[0m
+[90mGET /images/ENG.svg.png [32m200 [90m1ms - 163b[0m
+[90mGET /images/URU.svg.png [32m200 [90m0ms - 323b[0m
+[90mGET /images/GER.svg.png [32m200 [90m1ms - 124b[0m
+[90mGET /images/CRC.svg.png [32m200 [90m1ms - 150b[0m
+[90mGET /images/ALG.svg.png [32m200 [90m1ms - 373b[0m
+[90mGET /images/RUS.svg.png [32m200 [90m1ms - 118b[0m
+[90mGET /images/USA.svg.png [32m200 [90m1ms - 401b[0m
+[90mGET /images/FRA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/BEL.svg.png [32m200 [90m0ms - 127b[0m
+[90mGET /images/GHA.svg.png [32m200 [90m1ms - 222b[0m
+[90mGET /images/NGA.svg.png [32m200 [90m1ms - 125b[0m
+[90mGET /images/KOR.svg.png [32m200 [90m1ms - 605b[0m
+[90mGET /images/AUS.svg.png [32m200 [90m1ms - 504b[0m
+[90mGET /images/JPN.svg.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/ITA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/HON.svg.png [32m200 [90m1ms - 217b[0m
+[90mGET /images/POR.svg.png [32m200 [90m1ms - 404b[0m
+[90mGET /images/SUI.svg.png [32m200 [90m1ms - 166b[0m
+[90mGET /images/COL.svg.png [32m200 [90m1ms - 135b[0m
+[90mGET /gamesresult [36m304 [90m1399ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [32m200 [90m101ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [32m200 [90m1390ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [32m200 [90m2ms - 352b[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [32m200 [90m1ms - 239b[0m
+[90mGET /images/RUS.svg.png [32m200 [90m3ms - 118b[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1380ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m23ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /logout [36m302 [90m5ms - 58b[0m
+[90mGET / [36m304 [90m34ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m87ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [36m302 [90m1ms - 35b[0m
+[90mGET / [36m304 [90m55ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /login [36m304 [90m112ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m190ms - 40b[0m
+[90mGET /games [36m302 [90m27ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1312ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m6ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m3ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m2ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m132ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [32m200 [90m1336ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult [36m304 [90m1359ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m26ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m81ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=37f1fbd2-11cc-4aae-a031-ebd7fc66304b [32m200 [90m1381ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m127ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m67ms - 1.25kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /login [36m304 [90m142ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m203ms - 40b[0m
+[90mGET /games [36m302 [90m28ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1391ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [32m200 [90m1ms - 226b[0m
+[90mGET /images/BRA.svg.png [32m200 [90m2ms - 648b[0m
+[90mGET /images/CRO.svg.png [32m200 [90m1ms - 277b[0m
+[90mGET /images/ESP.svg.png [32m200 [90m1ms - 310b[0m
+[90mGET /images/NED.svg.png [32m200 [90m1ms - 118b[0m
+[90mGET /images/CHI.svg.png [32m200 [90m1ms - 208b[0m
+[90mGET /images/AUS.svg.png [32m200 [90m1ms - 504b[0m
+[90mGET /images/COL.svg.png [32m200 [90m1ms - 135b[0m
+[90mGET /leaderboard [32m200 [90m68ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m4ms[0m
+[90mGET /leaderboard [32m200 [90m96ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=5155b84d-92bb-401a-9697-1368d83d36cc [36m304 [90m1344ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m106ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m91ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1321ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m26ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [32m200 [90m1ms - 298b[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [32m200 [90m2ms - 504b[0m
+[90mGET /images/GRE.svg.png [32m200 [90m2ms - 248b[0m
+[90mGET /images/CIV.svg.png [32m200 [90m1ms - 120b[0m
+[90mGET /images/JPN.svg.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/URU.svg.png [32m200 [90m1ms - 323b[0m
+[90mGET /images/CRC.svg.png [32m200 [90m1ms - 150b[0m
+[90mGET /images/ENG.svg.png [32m200 [90m2ms - 163b[0m
+[90mGET /images/ITA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/SUI.svg.png [32m200 [90m3ms - 166b[0m
+[90mGET /images/FRA.svg.png [32m200 [90m1ms - 128b[0m
+[90mGET /images/ECU.svg.png [32m200 [90m1ms - 352b[0m
+[90mGET /images/HON.svg.png [32m200 [90m1ms - 217b[0m
+[90mGET /images/ARG.svg.png [32m200 [90m1ms - 239b[0m
+[90mGET /images/BIH.svg.png [32m200 [90m1ms - 379b[0m
+[90mGET /images/IRN.svg.png [32m200 [90m0ms - 319b[0m
+[90mGET /images/NGA.svg.png [32m200 [90m0ms - 125b[0m
+[90mGET /images/GER.svg.png [32m200 [90m1ms - 124b[0m
+[90mGET /images/POR.svg.png [32m200 [90m1ms - 404b[0m
+[90mGET /images/GHA.svg.png [32m200 [90m1ms - 222b[0m
+[90mGET /images/USA.svg.png [32m200 [90m1ms - 401b[0m
+[90mGET /images/BEL.svg.png [32m200 [90m1ms - 127b[0m
+[90mGET /images/ALG.svg.png [32m200 [90m1ms - 373b[0m
+[90mGET /images/RUS.svg.png [32m200 [90m1ms - 118b[0m
+[90mGET /images/KOR.svg.png [32m200 [90m1ms - 605b[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [32m200 [90m2ms - 135b[0m
+[90mGET /leaderboard [36m304 [90m139ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=2b32401c-a801-42b9-8fcf-9478fbef1949 [32m200 [90m1353ms - 8.65kb[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [32m200 [90m1447ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m49ms[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [32m200 [90m1ms - 44.47kb[0m
+[90mGET /login [32m200 [90m65ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m63ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=2b32401c-a801-42b9-8fcf-9478fbef1949 [36m304 [90m1294ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m201ms - 68b[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m2ms[0m
+[90mGET /games [36m302 [90m20ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1443ms - 8.65kb[0m
+[90mGET /images/SUI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m88ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m76ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1328ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m3ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m3ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m77ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [32m200 [90m1388ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult [36m304 [90m1428ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m73ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=2b32401c-a801-42b9-8fcf-9478fbef1949 [36m304 [90m1291ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m105ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [36m304 [90m1420ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m76ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [36m304 [90m1427ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m3ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m97ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=ec8e94cf-0bea-45f1-9379-c4833a29dc3d [32m200 [90m1413ms - 8.67kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m96ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=b8b8804b-11db-438e-af8f-664dfd80dd11 [32m200 [90m1339ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m97ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=5155b84d-92bb-401a-9697-1368d83d36cc [36m304 [90m1382ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m3ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m2ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m2ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult [36m304 [90m1372ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m90ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=bf44428f-c790-4d57-8216-e76de213c594 [32m200 [90m1407ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m2ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m93ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m3ms - 2.8kb[0m
+[90mGET /javascripts/script.js [32m200 [90m2ms - 930b[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mGET /leaderboard [32m200 [90m76ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m3ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mGET /img/grey.png [32m200 [90m1ms - 44.47kb[0m
+[90mGET /leaderboard [36m304 [90m84ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=e9b8f7fe-533a-444b-be1d-07e879e38fa4 [36m302 [90m1ms - 58b[0m
+[90mGET / [36m304 [90m62ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /login [32m200 [90m66ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m4ms - 68b[0m
+[90mGET /login [32m200 [90m74ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m302 [90m7ms - 58b[0m
+[90mGET / [36m304 [90m40ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /login [36m304 [90m44ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m302 [90m2ms - 58b[0m
+[90mGET / [36m304 [90m36ms[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m202ms - 68b[0m
+[90mGET /games [36m302 [90m50ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1276ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult [36m304 [90m1401ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m2ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /login [36m304 [90m64ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mPOST /login [36m302 [90m20ms - 68b[0m
+[90mGET /login [32m200 [90m54ms - 1.44kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /leaderboard [32m200 [90m106ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mPOST /login [36m302 [90m211ms - 68b[0m
+[90mGET /games [36m302 [90m25ms - 78b[0m
+[90mGET /leaderboard [36m304 [90m107ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /gamesresult [32m200 [90m1329ms - 8.65kb[0m
+[90mGET /img/grey.png [36m304 [90m2ms[0m
+[90mGET /gamesresult [36m302 [90m4ms - 35b[0m
+[90mGET / [36m304 [90m32ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /login [36m304 [90m58ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m3ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mPOST /login [36m302 [90m229ms - 40b[0m
+[90mGET /leaderboard [32m200 [90m93ms - 7.27kb[0m
+[90mGET /games [36m302 [90m23ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1281ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mPOST /login [36m302 [90m187ms - 40b[0m
+[90mGET /games [36m302 [90m19ms - 45b[0m
+[90mGET /gamesresult [32m200 [90m1391ms - 8.65kb[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1312ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m4ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /logout [36m302 [90m4ms - 35b[0m
+[90mGET / [36m304 [90m61ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m2ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /signup [36m304 [90m72ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mPOST /signup [36m302 [90m208ms - 40b[0m
+[90mGET /games [32m200 [90m691ms - 20.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m2ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m2ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /logout [36m302 [90m4ms - 35b[0m
+[90mGET / [36m304 [90m74ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /signup [36m304 [90m54ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1417ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m21ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m20ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mPOST /signup [36m302 [90m215ms - 40b[0m
+[90mGET /games [32m200 [90m667ms - 20.67kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m4ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m2ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m3ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m3ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m2ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m6ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m5ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m4ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m4ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m3ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m2ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m6ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m6ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m5ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m4ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mPOST /gamesresult [36m302 [90m104ms - 85b[0m
+[90mGET /gamesresult?id=faa5baaf-488e-427d-8049-c341980b093b [32m200 [90m1386ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m2ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m162ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m302 [90m2ms - 58b[0m
+[90mGET / [36m304 [90m57ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /login [36m304 [90m48ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mPOST /login [36m302 [90m189ms - 68b[0m
+[90mGET /games [36m302 [90m21ms - 78b[0m
+[90mGET /gamesresult [32m200 [90m1294ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m84ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m91ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m3ms[0m
+[90mGET /gamesresult?id=889abf35-8c15-492e-b2ba-74c4f68c283b [32m200 [90m1452ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m3ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m2ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m21ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m96ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=423e3da9-7175-4b96-9975-0fe741365f45 [32m200 [90m1327ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=c6aae56e-06ee-4716-a2a4-e9dc45fe7ac3 [32m200 [90m1376ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=3aacc820-f232-497f-b12c-304cbfb3450f [32m200 [90m1429ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=2ec1c132-af9c-418e-8240-9af32866a62c [32m200 [90m1296ms - 8.65kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=66b4591c-4adc-4090-9d07-fbc82730d5c4 [32m200 [90m1450ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=0381b948-be68-4367-b5b4-51890b8a4af9 [32m200 [90m1285ms - 8.66kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m2ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /gamesresult [36m304 [90m1552ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m4ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m83ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [36m304 [90m1370ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m1ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [36m304 [90m128ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /gamesresult?id=945c20f0-ad47-4abf-a1e6-9be1d46f8467 [36m304 [90m1404ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /leaderboard [32m200 [90m87ms - 7.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m3ms - 2.8kb[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [32m200 [90m2ms - 44.47kb[0m
+[90mGET /leaderboard [36m304 [90m74ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /gamesresult [36m304 [90m1427ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m2ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m86ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=7a2d4671-80aa-490f-a213-1bf62602a705 [36m304 [90m1309ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m1ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m0ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m3ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m3ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m3ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m2ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m2ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m
+[90mGET /leaderboard [36m304 [90m69ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/script.js [36m304 [90m0ms[0m
+[90mGET /img/grey.png [36m304 [90m0ms[0m
+[90mGET /gamesresult?id=2b32401c-a801-42b9-8fcf-9478fbef1949 [36m304 [90m1484ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+[90mGET /javascripts/script.js [36m304 [90m1ms[0m
+[90mGET /images/CRO.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BRA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/MEX.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CMR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ESP.svg.png [36m304 [90m0ms[0m
+[90mGET /images/NED.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CHI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/AUS.svg.png [36m304 [90m1ms[0m
+[90mGET /images/COL.svg.png [36m304 [90m1ms[0m
+[90mGET /img/grey.png [36m304 [90m1ms[0m
+[90mGET /images/GRE.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CIV.svg.png [36m304 [90m1ms[0m
+[90mGET /images/JPN.svg.png [36m304 [90m0ms[0m
+[90mGET /images/URU.svg.png [36m304 [90m1ms[0m
+[90mGET /images/CRC.svg.png [36m304 [90m0ms[0m
+[90mGET /images/ENG.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ITA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/SUI.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ECU.svg.png [36m304 [90m0ms[0m
+[90mGET /images/FRA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/HON.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ARG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/BIH.svg.png [36m304 [90m0ms[0m
+[90mGET /images/IRN.svg.png [36m304 [90m1ms[0m
+[90mGET /images/NGA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/GER.svg.png [36m304 [90m0ms[0m
+[90mGET /images/POR.svg.png [36m304 [90m1ms[0m
+[90mGET /images/GHA.svg.png [36m304 [90m0ms[0m
+[90mGET /images/USA.svg.png [36m304 [90m1ms[0m
+[90mGET /images/BEL.svg.png [36m304 [90m1ms[0m
+[90mGET /images/ALG.svg.png [36m304 [90m0ms[0m
+[90mGET /images/RUS.svg.png [36m304 [90m0ms[0m
+[90mGET /images/KOR.svg.png [36m304 [90m1ms[0m

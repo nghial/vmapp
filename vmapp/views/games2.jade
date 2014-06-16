@@ -1,0 +1,317 @@
+extends layout
+
+block content
+    script.
+        $('inputUserName').on('input', function() {alert('Text1 changed!');});
+    h1.
+        Games
+    br
+    form(name="gameprediction", method="post", action="/gamesresult2")
+        h2.
+            Player
+        div
+                    label(for="inputUserName") Username: 
+                    input(id="inputUserName", type="text", placeholder="username", name="username")
+        h2.
+            Group A
+        ul
+            table#groupA
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "A")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id=game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id=game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        div#scoreTable
+            table#scoreTableA
+                tr
+                    th Team
+                    th W
+                    th D
+                    th L
+                    th GW
+                    th GA
+                    th Points
+                tr#scoreRowA1
+                tr#scoreRowA2
+                tr#scoreRowA3
+                tr#scoreRowA4
+        br
+        h2.
+            Group B
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "B")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group C
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "C")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group D
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "D")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group E
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "E")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group F
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "F")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group G
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "G")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        br
+        h2.
+            Group H
+        ul
+            table
+                thead
+                    tr 
+                        th
+                        th Team 1
+                        th
+                        th
+                        th Team 2
+                        th
+                        th
+                        th(colspan="3") Result
+                tbody
+                    each game, i in games
+                        if (game.group == "H")
+                            tr
+                                td 
+                                    p= 'Match ' + game.match_id + ' (' + game.play_at + '): '
+                                td 
+                                    p=game.team1_title 
+                                td
+                                    img(src="images/" + game.team1_code + ".svg.png")
+                                td -
+                                td
+                                    p=game.team2_title
+                                td
+                                    img(src="images/" + game.team2_code + ".svg.png")
+                                td
+                                td 
+                                    input(id="inputmatchpred" + game.match_id + game.team1_code, type="text", placeholder=game.team1_code, name="game" + game.match_id + game.team1_code, value=0)
+                                td -
+                                td
+                                    input(id="inputmatchpred" + game.match_id + game.team2_code, type="text", placeholder=game.team2_code, name="game" + game.match_id + game.team2_code, value=0)
+        div
+            button(type="submit") submit

@@ -115,13 +115,9 @@ module.exports = function(app, passport) {
 
     app.get('/gamesoverview', function(req, res) {
         var collection = db_games.get('usercollection');
-        var collection2 = db_gamesskeleton.get('usercollection');
         collection.find({},{},function(e,docs){
-            collection2.find({}, {}, function(e, docs2){
-                res.render('gamesoverview', {
-                    "games" : docs,
-                    "results" : docs2
-                });
+            res.render('gamesoverview', {
+                "games" : docs
             });
         });
     });
@@ -135,6 +131,10 @@ module.exports = function(app, passport) {
             collection.find({'uuid' : id},{},function(e,docs){
                 games.find({}, {}, function(e, games){
                     res.render('gamesresult', {
+
+
+
+
                         "gamesresult" : docs,
                         "games" : games
                     });

@@ -15,10 +15,11 @@ block content
                     td#team1
                         p="Brazil"
                     td#result
+                        p=r.game1BRA +" - "+r.game1CRO
                         each game, g in games
-                            if game.match_id == 1
+                            if game.match_id == 1 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game1BRA +" - "+r.game1CRO
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Croatia"
                     td(style="width: 20px")
@@ -34,10 +35,12 @@ block content
                     td#team1
                         p="Mexico"
                     td#result
+                        p=r.game2MEX +" - "+r.game2CMR
                         each game, g in games
-                            if game.match_id == 2
+                            if game.match_id == 2 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game2MEX +" - "+r.game2CMR
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
+                                    
                     td#team2
                         p="Cameroon"
                     td(style="width: 20px")
@@ -53,10 +56,11 @@ block content
                     td#team1
                         p="Spain"
                     td#result
+                        p=r.game3ESP +" - "+r.game3NED
                         each game, g in games
-                            if game.match_id == 3
+                            if game.match_id == 3 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game3ESP +" - "+r.game3NED
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Netherlands"
                     td(style="width: 20px")
@@ -72,10 +76,11 @@ block content
                     td#team1
                         p="Chile"
                     td#result
+                        p=r.game4CHI +" - "+r.game4AUS
                         each game, g in games
-                            if game.match_id == 4
+                            if game.match_id == 4 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game4CHI +" - "+r.game4AUS
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Australia"
                     td(style="width: 20px")
@@ -91,10 +96,11 @@ block content
                     td#team1
                         p="Colombia"
                     td#result
+                        p=r.game5COL +" - "+r.game5GRE 
                         each game, g in games
-                            if game.match_id == 5
+                            if game.match_id == 5 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game5COL +" - "+r.game5GRE
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Greece"
                     td(style="width: 20px")
@@ -110,10 +116,11 @@ block content
                     td#team1
                         p="Côte d'Ivoire"
                     td#result
+                        p=r.game6CIV +" - "+r.game6JPN
                         each game, g in games
-                            if game.match_id == 6
+                            if game.match_id == 6 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game6CIV +" - "+r.game6JPN
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Japan"
                     td(style="width: 20px")
@@ -130,10 +137,11 @@ block content
                     td#team1
                         p="Uruguay"
                     td#result
+                        p=r.game7URU +" - "+r.game7CRC
                         each game, g in games
-                            if game.match_id == 7
+                            if game.match_id == 7 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game7URU +" - "+r.game7CRC
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Costa Rica"
                     td(style="width: 20px")
@@ -150,10 +158,11 @@ block content
                     td#team1
                         p="England"
                     td#result
+                        p=r.game8ENG +" - "+r.game8ITA
                         each game, g in games
-                            if game.match_id == 8
+                            if game.match_id == 8 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game8ENG +" - "+r.game8ITA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Italy"
                     td(style="width: 20px")
@@ -170,10 +179,11 @@ block content
                     td#team1
                         p="Switzerland"
                     td#result
+                        p=r.game9SUI +" - "+r.game9ECU
                         each game, g in games
-                            if game.match_id == 9
+                            if game.match_id == 9 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game9SUI +" - "+r.game9ECU
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Ecuador"
                     td(style="width: 20px")
@@ -191,10 +201,11 @@ block content
                     td#team1
                         p="France"
                     td#result
+                        p=r.game10FRA +" - "+r.game10HON
                         each game, g in games
-                            if game.match_id == 10
+                            if game.match_id == 10 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game10FRA +" - "+r.game10HON
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Honduras"
                     td(style="width: 20px")
@@ -210,10 +221,11 @@ block content
                     td#team1
                         p="Argentina"
                     td#result
+                        p=r.game11ARG +" - "+r.game11BIH
                         each game, g in games
-                            if game.match_id == 11
+                            if game.match_id == 11 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game11ARG +" - "+r.game11BIH
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Bosnia and Herzegovina"
                     td(style="width: 20px")
@@ -230,10 +242,11 @@ block content
                     td#team1
                         p="Iran"
                     td#result
+                        p=r.game12IRN +" - "+r.game12NGA
                         each game, g in games
-                            if game.match_id == 12
+                            if game.match_id == 12 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game12IRN +" - "+r.game12NGA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Nigeria"
                     td(style="width: 20px")
@@ -250,10 +263,11 @@ block content
                     td#team1
                         p="Germany"
                     td#result
+                        p=r.game13GER +" - "+r.game13POR
                         each game, g in games
-                            if game.match_id == 13
+                            if game.match_id == 13 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game13GER +" - "+r.game13POR
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Portugal"
                     td(style="width: 20px")
@@ -270,10 +284,11 @@ block content
                     td#team1
                         p="Ghana"
                     td#result
+                        p=r.game14GHA +" - "+r.game14USA
                         each game, g in games
-                            if game.match_id == 14
+                            if game.match_id == 14 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game14GHA +" - "+r.game14USA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="USA"
                     td(style="width: 20px")
@@ -290,10 +305,11 @@ block content
                     td#team1
                         p="Belgium"
                     td#result
+                        p=r.game15BEL +" - "+r.game15ALG
                         each game, g in games
-                            if game.match_id == 15
+                            if game.match_id == 15 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game15BEL +" - "+r.game15ALG
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Algeria"
                     td(style="width: 20px")
@@ -309,10 +325,11 @@ block content
                     td#team1
                         p="Russia"
                     td#result
+                        p=r.game16RUS +" - "+r.game16KOR
                         each game, g in games
-                            if game.match_id == 16
+                            if game.match_id == 16 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game16RUS +" - "+r.game16KOR
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Korea Republic"
                     td(style="width: 20px")
@@ -328,10 +345,11 @@ block content
                     td#team1
                         p="Brazil"
                     td#result
+                        p=r.game17BRA +" - "+r.game17MEX
                         each game, g in games
-                            if game.match_id == 17
+                            if game.match_id == 17 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game17BRA +" - "+r.game17MEX
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Mexico"
                     td(style="width: 20px")
@@ -347,10 +365,11 @@ block content
                     td#team1
                         p="Cameroon"
                     td#result
+                        p=r.game18CMR +" - "+r.game18CRO
                         each game, g in games
-                            if game.match_id == 18
+                            if game.match_id == 18 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game18CMR +" - "+r.game18CRO
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Croatia"
                     td(style="width: 20px")
@@ -366,10 +385,11 @@ block content
                     td#team1
                         p="Spain"
                     td#result
+                        p=r.game19ESP +" - "+r.game19CHI
                         each game, g in games
-                            if game.match_id == 19
+                            if game.match_id == 19 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game19ESP +" - "+r.game19CHI
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Chile"
                     td(style="width: 20px")
@@ -385,10 +405,11 @@ block content
                     td#team1
                         p="Australia"
                     td#result
+                        p=r.game20AUS +" - "+r.game20NED
                         each game, g in games
-                            if game.match_id == 20
+                            if game.match_id == 20 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game20AUS +" - "+r.game20NED
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Netherlands"
                     td(style="width: 20px")
@@ -404,10 +425,11 @@ block content
                     td#team1
                         p="Colombia"
                     td#result
+                        p=r.game21COL +" - "+r.game21CIV
                         each game, g in games
-                            if game.match_id == 21
+                            if game.match_id == 21 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game21COL +" - "+r.game21CIV
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Côte d'Ivoire"
                     td(style="width: 20px")
@@ -423,10 +445,11 @@ block content
                     td#team1
                         p="Japan"
                     td#result
+                        p=r.game22JPN +" - "+r.game22GRE
                         each game, g in games
-                            if game.match_id == 22
+                            if game.match_id == 22 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game22JPN +" - "+r.game22GRE
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Greece"
                     td(style="width: 20px")
@@ -442,10 +465,11 @@ block content
                     td#team1
                         p="Uruguay"
                     td#result
+                        p=r.game23URU +" - "+r.game23ENG
                         each game, g in games
-                            if game.match_id == 23
+                            if game.match_id == 23 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game23URU +" - "+r.game23ENG
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="England"
                     td(style="width: 20px")
@@ -461,10 +485,11 @@ block content
                     td#team1
                         p="Italy"
                     td#result
+                        p=r.game24ITA +" - "+r.game24CRC
                         each game, g in games
-                            if game.match_id == 24
+                            if game.match_id == 24 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game24ITA +" - "+r.game24CRC
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Costa Rica"
                     td(style="width: 20px")
@@ -480,10 +505,11 @@ block content
                     td#team1
                         p="Switzerland"
                     td#result
+                        p=r.game25SUI +" - "+r.game25FRA
                         each game, g in games
-                            if game.match_id == 25
+                            if game.match_id == 25 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game25SUI +" - "+r.game25FRA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="France"
                     td(style="width: 20px")
@@ -499,10 +525,11 @@ block content
                     td#team1
                         p="Honduras"
                     td#result
+                        p=r.game26HON +" - "+r.game26ECU
                         each game, g in games
-                            if game.match_id == 26
+                            if game.match_id == 26 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game26HON +" - "+r.game26ECU
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Ecuador"
                     td(style="width: 20px")
@@ -518,10 +545,11 @@ block content
                     td#team1
                         p="Argentina"
                     td#result
+                        p=r.game27ARG +" - "+r.game27IRN
                         each game, g in games
-                            if game.match_id == 27
+                            if game.match_id == 27 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game27ARG +" - "+r.game27IRN
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Iran"
                     td(style="width: 20px")
@@ -537,10 +565,11 @@ block content
                     td#team1
                         p="Nigeria"
                     td#result
+                        p=r.game28NGA +" - "+r.game28BIH
                         each game, g in games
-                            if game.match_id == 28
+                            if game.match_id == 28 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game28NGA +" - "+r.game28BIH
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Bosnia and Herzegovina"
                     td(style="width: 20px")
@@ -556,10 +585,11 @@ block content
                     td#team1
                         p="Germany"
                     td#result
+                        p=r.game29GER +" - "+r.game29GHA
                         each game, g in games
-                            if game.match_id == 29
+                            if game.match_id == 29 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game29GER +" - "+r.game29GHA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Ghana"
                     td(style="width: 20px")
@@ -575,10 +605,11 @@ block content
                     td#team1
                         p="USA"
                     td#result
+                        p=r.game30USA +" - "+r.game30POR
                         each game, g in games
-                            if game.match_id == 30
+                            if game.match_id == 30 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game30USA +" - "+r.game30POR
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Portugal"
                     td(style="width: 20px")
@@ -594,10 +625,11 @@ block content
                     td#team1
                         p="Belgium"
                     td#result
+                        p=r.game31BEL +" - "+r.game31RUS
                         each game, g in games
-                            if game.match_id == 31
+                            if game.match_id == 31 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game31BEL +" - "+r.game31RUS
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Russia"
                     td(style="width: 20px")
@@ -613,10 +645,11 @@ block content
                     td#team1
                         p="Korea Republic"
                     td#result
+                        p=r.game32KOR +" - "+r.game32ALG
                         each game, g in games
-                            if game.match_id == 32
+                            if game.match_id == 32 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game32KOR +" - "+r.game32ALG
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Aleria"
                     td(style="width: 20px")
@@ -632,10 +665,11 @@ block content
                     td#team1
                         p="Cameroon"
                     td#result
+                        p=r.game33CMR +" - "+r.game33BRA
                         each game, g in games
-                            if game.match_id == 33
+                            if game.match_id == 33 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game33CMR +" - "+r.game33BRA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Brazil"
                     td(style="width: 20px")
@@ -651,10 +685,11 @@ block content
                     td#team1
                         p="Croatia"
                     td#result
+                        p=r.game34CRO +" - "+r.game34MEX
                         each game, g in games
-                            if game.match_id == 34
+                            if game.match_id == 34 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game34CRO +" - "+r.game34MEX
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Mexico"
                     td(style="width: 20px")
@@ -670,10 +705,11 @@ block content
                     td#team1
                         p="Australia"
                     td#result
+                        p=r.game35AUS +" - "+r.game35ESP
                         each game, g in games
-                            if game.match_id == 35
+                            if game.match_id == 35 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game35AUS +" - "+r.game35ESP
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Spain"
                     td(style="width: 20px")
@@ -690,10 +726,11 @@ block content
                     td#team1
                         p="Netherlands"
                     td#result
+                        p=r.game36NED +" - "+r.game36CHI
                         each game, g in games
-                            if game.match_id == 36
+                            if game.match_id == 36 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game36NED +" - "+r.game36CHI
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Chile"
                     td(style="width: 20px")
@@ -709,10 +746,11 @@ block content
                     td#team1
                         p="Japan"
                     td#result
+                        p=r.game37JPN +" - "+r.game37COL
                         each game, g in games
-                            if game.match_id == 37
+                            if game.match_id == 37 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game37JPN +" - "+r.game37COL
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Colombia"
                     td(style="width: 20px")
@@ -728,10 +766,11 @@ block content
                     td#team1
                         p="Greece"
                     td#result
+                        p=r.game38GRE +" - "+r.game38CIV
                         each game, g in games
-                            if game.match_id == 38
+                            if game.match_id == 38 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game38GRE +" - "+r.game38CIV
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Côte d'Ivoire"
                     td(style="width: 20px")
@@ -747,10 +786,11 @@ block content
                     td#team1
                         p="Italy"
                     td#result
+                        p=r.game39ITA +" - "+r.game39URU
                         each game, g in games
-                            if game.match_id == 39
+                            if game.match_id == 39 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game39ITA +" - "+r.game39URU
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Uruguay"
                     td(style="width: 20px")
@@ -766,10 +806,11 @@ block content
                     td#team1
                         p="Costa Rica"
                     td#result
+                        p=r.game40CRC +" - "+r.game40ENG
                         each game, g in games
-                            if game.match_id == 40
+                            if game.match_id == 40 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game40CRC +" - "+r.game40ENG
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="England"
                     td(style="width: 20px")
@@ -785,10 +826,11 @@ block content
                     td#team1
                         p="Honduras"
                     td#result
+                        p=r.game41HON +" - "+r.game41SUI
                         each game, g in games
-                            if game.match_id == 41
+                            if game.match_id == 41 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game41HON +" - "+r.game41SUI
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Switzerland"
                     td(style="width: 20px")
@@ -804,10 +846,11 @@ block content
                     td#team1
                         p="Ecuador"
                     td#result
+                        p=r.game42ECU +" - "+r.game42FRA
                         each game, g in games
-                            if game.match_id == 42
+                            if game.match_id == 42 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game42ECU +" - "+r.game42FRA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="France"
                     td(style="width: 20px")
@@ -823,10 +866,11 @@ block content
                     td#team1
                         p="Nigeria"
                     td#result
+                        p=r.game43NGA +" - "+r.game43ARG
                         each game, g in games
-                            if game.match_id == 43
+                            if game.match_id == 43 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game43NGA +" - "+r.game43ARG
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Argentina"
                     td(style="width: 20px")
@@ -842,10 +886,11 @@ block content
                     td#team1
                         p="Bosnia and Herzegovina"
                     td#result
+                        p=r.game44BIH +" - "+r.game44IRN
                         each game, g in games
-                            if game.match_id == 44
+                            if game.match_id == 44 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game44BIH +" - "+r.game44IRN
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Iran"
                     td(style="width: 20px")
@@ -861,10 +906,11 @@ block content
                     td#team1
                         p="USA"
                     td#result
+                        p=r.game45USA +" - "+r.game45GER
                         each game, g in games
-                            if game.match_id == 45
+                            if game.match_id == 45 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game45USA +" - "+r.game45GER
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Germany"
                     td(style="width: 20px")
@@ -880,10 +926,11 @@ block content
                     td#team1
                         p="Portugal"
                     td#result
+                        p=r.game46POR +" - "+r.game46GHA
                         each game, g in games
-                            if game.match_id == 46
+                            if game.match_id == 46 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game46POR +" - "+r.game46GHA
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Ghana"
                     td(style="width: 20px")
@@ -899,10 +946,11 @@ block content
                     td#team1
                         p="Korea Republic"
                     td#result
+                        p=r.game47KOR +" - "+r.game47BEL
                         each game, g in games
-                            if game.match_id == 47
+                            if game.match_id == 47 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game47KOR +" - "+r.game47BEL
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Belgium"
                     td(style="width: 20px")
@@ -918,10 +966,11 @@ block content
                     td#team1
                         p="Algeria"
                     td#result
+                        p=r.game48ALG +" - "+r.game48RUS
                         each game, g in games
-                            if game.match_id == 48
+                            if game.match_id == 48 && game.score1 != null
                                 a(href=game.url target="_blank")
-                                    p=r.game48ALG +" - "+r.game48RUS
+                                    p(style="font-size:13px;")="Final score: " + game.score1 + " - " + game.score2
                     td#team2
                         p="Russia"
                     td(style="width: 20px")

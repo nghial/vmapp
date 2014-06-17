@@ -85,7 +85,9 @@ module.exports = function(app, passport) {
         var collection = db_leaderboard.get('usercollection');
         collection.find({$query: {}, $orderby: { points : -1 }},{},function(e,docs){
             res.render('leaderboard', {
-                "leaderboard" : docs
+                "leaderboard" : docs,
+                "_place":0,
+                "_oldpoints":undefined
             });
         }).toArray;
     });

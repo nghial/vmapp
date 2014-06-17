@@ -13,7 +13,14 @@ block content
                     th Points
             each entry, i in leaderboard
                 tr
-                    td= i+1
+                    td
+                        if entry.points != _oldpoints
+                            - _oldpoints = entry.points
+                            - _place = i +1
+                            p=_place
+                        else
+                            p=_place
+                        //p='(' + (i+1) + ')'
                     td
                         a(href="/gamesresult?id=" + entry.uuid, id="linkToUser")
                             p=entry.name

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  form(name="userprofile", method="post", action="/profile")
+    div(class="container")
+      div(class="page-header text-center")
+          h1 Profile Page
+              span(class="fa fa-user")
+          a(href="/logout" class="btn btn-default btn-sm") Logout
+      div(class="row")
+          div(class="col-sm-6")
+              div(class="well")
+                    p='Userprofile for ' + userprofile.username
+                    p
+                      label(for="full_name") Full name:
+                      input(id="full_name" type="text", name="full_name", value=userprofile.name)
+                    p
+                      label(for="company") Company:
+                      input(id="company" type="text", name="company", value=userprofile.company)
+                button(type="submit", id="profileButton") submit

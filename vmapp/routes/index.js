@@ -98,9 +98,15 @@ module.exports = function(app, passport) {
 
     app.get('/leaderboard', function(req, res) {
         var collection = db_leaderboard.get('usercollection');
-        collection.find({$query: {}, $orderby: { points : -1 }},{},function(e,docs){
+        var filter = {};
+
+        if(req.query.company != undefined && req.query.company != 'all'){               
+            filter = {'company': req.query.company};               
+        }
+    
+        collection.find({$query: filter, $orderby: { points : -1 }},{},function(e,docs){
             res.render('leaderboard', {
-                "leaderboard" : docs,
+                "leaderboard" : docs,                    
                 "_place":0,
                 "_oldpoints":undefined
             });
@@ -112,20 +118,20 @@ module.exports = function(app, passport) {
         var collection = db_gamesresult.get('usercollection');
         var collection2 = db_games.get('usercollection');
         collection.count({'username' : req.user.local.email},function(e,count){
-            if (count == 0) {
-                collection2.find({},{},function(e,docs){
-                    res.render('games', {
-                        "games" : docs,
-                        user : req.user
-                    });
-                });
-            }
-            else {
+            //if (count == 0) {
+            //    collection2.find({},{},function(e,docs){
+            //        res.render('games', {
+            //            "games" : docs,
+            //            user : req.user
+            //        });
+            //    });
+            //}
+            //else {
                 // If it worked, set the header so the address bar doesn't still say /adduser
                 res.location("gamesresult");
                 // And forward to success page
                 res.redirect("gamesresult");
-            }
+            //}
         });
     });
 
@@ -134,6 +140,15 @@ module.exports = function(app, passport) {
         var collection = db_games.get('usercollection');
         collection.find({},{},function(e,docs){
             res.render('gamesoverview', {
+                "games" : docs
+            });
+        });
+    });
+
+    app.get('/finalstage', function(req, res) {
+        var collection = db_games.get('usercollection');
+        collection.find({},{},function(e,docs){
+            res.render('finalstage', {
                 "games" : docs
             });
         });

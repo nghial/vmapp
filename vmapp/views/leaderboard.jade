@@ -10,6 +10,12 @@ block content
                 tr
                     th #
                     th Username
+                        ul#company-filter
+                            li: a(href="/leaderboard") ALL
+                            li: a(href="/leaderboard?company=ACN") Accenture
+                            li: a(href="/leaderboard?company=AVA") Avanade
+                            li: a(href="/leaderboard?company=AAS") Avdeling for Altinn og Seres                            
+                            li: a(href="/leaderboard?company=BF") Basefarm
                     th Points
             each entry, i in leaderboard
                 tr
@@ -23,6 +29,6 @@ block content
                         //p='(' + (i+1) + ')'
                     td
                         a(href="/gamesresult?id=" + entry.uuid, id="linkToUser")
-                            p=entry.name
+                            p=entry.name + ' ['+entry.company+']'
                     td 
                         p=entry.points

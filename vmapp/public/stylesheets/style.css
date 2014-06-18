@@ -8,6 +8,14 @@ a {
   color: #00B7FF;
 }
 
+input {
+    width: 25px;
+}
+
+#test td{
+    border: solid black 1px;
+}
+
 #nav {
 	list-style-type: none;
 	margin: 0;
@@ -138,8 +146,41 @@ a {
 
 #games #result {
     padding-top: 10px;
+	text-align: center;
 }
 
 .bordered td {
     background-color: white;
+}
+
+#gamesoverview #games:hover{
+    background-color: #D3D3D3;
+}
+
+#gamesoverview td{
+}
+
+#gamesoverview {
+    width: 1000px;    
+}
+
+#scoreintable {
+    padding-top: 12px;
+}
+
+#company-filter{
+    /*text-align: right;*/
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#company-filter li{
+    display: inline;
+}
+
+#company-filter li + li:before{
+    content: " | ";
+    padding: 0 10px;
 }

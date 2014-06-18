@@ -1,0 +1,270 @@
+extends layout
+
+block content
+    h1.
+        Games
+    h5.
+        Follow the coming games in the World Cup, and find out which TV channel sends you favourite games!
+    br
+    table(class="group")
+        thead
+            h1.
+                Group A
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "A")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "A")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "A")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+    table(class="group")
+        thead
+            h1.
+                Group B
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "B")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "B")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "B")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group C
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "C")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "C")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "C")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group D
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "D")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "D")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "D")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group E
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "E")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "E")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "E")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group F
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "F")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "F")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "F")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group G
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "G")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "G")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "G")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel
+
+    table(class="group")
+        thead
+            h1.
+                Group H
+        tbody#gamesoverview
+            tr
+            each game, i in games
+                if (game.group == "H")
+                    td
+                        img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team1_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score1
+                    td(style="width: 80px")
+                        &nbsp;
+            tr
+            each game, i in games
+                if (game.group == "H")
+                    td
+                        img(src="images/" + game.team2_code + ".svg.png" height="50" width="50")
+                    td#teamintable
+                        p=game.team2_title
+                    td#scoreintable
+                        p(style="font-size:20px")=game.score2
+                    td
+            tr
+            each game, i in games
+                if (game.group == "H")
+                    td(colspan="4")
+                        p=game.play_at + " " + game.time
+                        p=game.channel

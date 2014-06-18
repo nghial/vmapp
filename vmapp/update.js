@@ -1,7 +1,7 @@
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/gamesresult');
-var db2 = monk('localhost:27017/gamesskeleton');
+var db2 = monk('localhost:27017/games');
 var db3 = monk('localhost:27017/leaderboard');
 var collection = db.get('usercollection');
 var collection2 = db2.get('usercollection');
@@ -57,7 +57,7 @@ collection.find({},{},function(e,docs){
                     }
                 }
 
-                scorelist.push(document.username  + ":" + document.uuid + ":" + points);
+                scorelist.push(document.username  + ":" + document.uuid + ":" + points + ":" + document.company);
         });
         collection3.drop();
         for (var elem in scorelist) {
@@ -68,6 +68,7 @@ collection.find({},{},function(e,docs){
                 "name" : res[0],
                 "uuid" : res[1],
                 "points" : parseInt(res[2])
+                "company": 
             }, function (err, doc) {
                 if (err) {
                     // If it failed, return error

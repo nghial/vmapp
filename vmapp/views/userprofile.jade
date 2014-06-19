@@ -14,8 +14,8 @@ block content
                     p='Userprofile for ' + userprofile.username
                     p
                       label(for="full_name") Full name:
-                      input(id="full_name" type="text", name="full_name", value=userprofile.name)
+                      input(id="full_name" type="text", name="full_name", value=userprofile.name, style="width: 300px;")
                     p
                       label(for="company") Company:
-                      input(id="company" type="text", name="company", value=userprofile.company)
+                      input(id="company" type="text", name="company", value=userprofile.company, style="width: 300px;")
                 button(type="submit", id="profileButton") submit

@@ -8,7 +8,7 @@ var db_leaderboard = monk(dbserver + '/leaderboard');
 var db_gamesresult = monk(dbserver + '/gamesresult');
 var db_games = monk(dbserver + '/games');
 var db_gamesskeleton = monk(dbserver + '/gamesskeleton');
-var db_unitprofiles = monk(dbserver + '/unitprofile')
+var db_userprofiles = monk(dbserver + '/userprofile') 
 
 
 module.exports = function(app, passport) {
@@ -57,19 +57,31 @@ module.exports = function(app, passport) {
     // =====================================
     // we will want this protected so you have to be logged in to visit
     // we will use route middleware to verify this (the isLoggedIn function)
-    app.get('/profile', isLoggedIn, function(req, res) {
-        var unitprofiles = db_unitprofiles.get('usercollection');
-        unitprofiles.findOne({username : req.user.local.email},{},function(err,docs){
-            assert.equal(null, err);
+   app.get('/profile', isLoggedIn, function(req, res) {
+        var userprofiles = db_userprofiles.get('usercollection');
+        userprofiles.find({username: req.user.local.email},function(err,docs){
+            var currentUserprofile = docs[0];
+            if(docs.length==0){
+                userprofiles.insert({username: req.user.local.email, name: "", company: ""}, function (err, doc) {
+                    if (err) {
+                        // If it failed, return error
+                        res.send("There was a problem adding the information to the database.");
+                    }
+                    userprofiles.find({username: req.user.local.email},function(err,docs2){
+                        currentUserprofile = docs2[0];
+                    });
+                });
+            }
             res.render('userprofile', {
-                "userprofile" : docs // get the user out of session and pass to template
+                "userprofile" : currentUserprofile, // get the user out of session and pass to template
+                "user" : req.user.local.email
             });
         });
     });
 
     app.post('/profile',  function(req, res){      
-        var unitprofiles = db_unitprofiles.get('usercollection');
-        unitprofiles.update({username : req.user.local.email},{username : req.user.local.email, name : req.body.full_name, company : req.body.company},{upsert: true}
+        var userprofiles = db_userprofiles.get('usercollection');
+        userprofiles.update({username : req.user.local.email},{username : req.user.local.email, name : req.body.full_name, company : req.body.company},{upsert: true}
         , function (err, doc) {
              res.redirect('/profile')
         });    

@@ -69,13 +69,20 @@ module.exports = function(app, passport) {
                     }
                     userprofiles.find({username: req.user.local.email},function(err,docs2){
                         currentUserprofile = docs2[0];
+                        res.render('userprofile', {
+                            "userprofile" : currentUserprofile, // get the user out of session and pass to template
+                            "user" : req.user.local.email
+                        });
                     });
                 });
             }
-            res.render('userprofile', {
-                "userprofile" : currentUserprofile, // get the user out of session and pass to template
-                "user" : req.user.local.email
-            });
+            else {
+                res.render('userprofile', {
+                    "userprofile" : currentUserprofile, // get the user out of session and pass to template
+                    "user" : req.user.local.email
+                });
+            }
+            
         });
     });
 

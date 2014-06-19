@@ -184,3 +184,85 @@ input {
     content: " | ";
     padding: 0 10px;
 }
+
+.round {
+    position: relative;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 40px;
+    float: left;
+}
+
+.match {
+    position: relative;
+    margin-top: 30px;
+}
+
+.matchQuarter {
+    position: relative;
+    margin-top: 140px;
+}
+
+.matchSemi {
+    position: relative;
+    margin-top: 240px;
+}
+
+.matchFinal {
+    position: relative;
+    margin-top: 430px;
+}
+
+.team:first-child {
+    border-bottom: 1px solid #999;
+}
+
+.team {
+    position: relative;
+    z-index: 1;
+    float: left;
+    background-color: #EEE;
+    width: 300px;
+    cursor: default;
+    height: 55px;
+}
+
+.teamContainer {
+    z-index: 1;
+    position: relative;
+    float: left;
+}
+
+.flaglabel {
+    padding: 3px;
+    width: 55px;
+    height: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.countrylabel {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 125px;
+    height: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.score {
+    float: right;
+    padding-top: 20px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+}

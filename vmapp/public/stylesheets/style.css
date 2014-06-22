@@ -9,7 +9,7 @@ a {
 }
 
 input {
-    width: 25px;
+    width: 37px;
 }
 
 #test td{
@@ -222,7 +222,7 @@ input {
     z-index: 1;
     float: left;
     background-color: #EEE;
-    width: 300px;
+    width: 315px;
     cursor: default;
     height: 55px;
 }
@@ -257,12 +257,12 @@ input {
 
 .score {
     float: right;
-    padding-top: 20px;
+    padding-top: 2px;
     padding-right: 2px;
     padding-left: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    width: 30px;
+    width: 40px;
     display: inline-block;
 }

@@ -102,19 +102,6 @@ module.exports = function(app, passport) {
         res.redirect('/');
     });
 
-    /* GET Userlist page. 
-    app.get('/userlist', function(req, res) {
-        var mongo = require('mongodb');
-        var monk = require('monk');
-        var db = monk('localhost:27017/vmapp');
-        var collection = db.get('usercollection');
-        collection.find({},{},function(e,docs){
-            res.render('userlist', {
-                "userlist" : docs
-            });
-        });
-    });*/
-
     app.get('/leaderboard', function(req, res) {
         var collection = db_leaderboard.get('usercollection');
         var filter = {};
@@ -173,6 +160,15 @@ module.exports = function(app, passport) {
         });
     });
 
+    app.post('/finalstageresult', function(req, res) {
+        console.log("finalstageresult: " + JSON.stringify(req.body));
+        res.render('finalstageresult');
+    });
+
+    app.get('/finalstageresult', function(req, res) {
+        res.render('finalstageresult');
+    });
+
     /* GET Userlist page. */
     app.get('/gamesresult', isLoggedIn, function(req, res) {
         var id = req.query.id;
@@ -182,10 +178,6 @@ module.exports = function(app, passport) {
             collection.find({'uuid' : id},{},function(e,docs){
                 games.find({}, {}, function(e, games){
                     res.render('gamesresult', {
-
-
-
-
                         "gamesresult" : docs,
                         "games" : games
                     });

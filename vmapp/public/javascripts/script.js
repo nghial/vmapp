@@ -54,16 +54,12 @@ function myFunction(elementID, nextStage)
     }
 
     if (parseInt(id.value, 10) != parseInt(x.value, 10)) {
-        console.log("getMyElementID(id.id, prefix[0], 'OT')" + getMyElementID(id.id, prefix[0], "OT"));
-        console.log("getOpponentTeamID(id.id, prefix[0], 'OT')" + getOpponentTeamID(id.id, prefix[0], "OT"));
-
         document.getElementById(getMyElementID(id.id, prefix[0], "OT")).disabled = true;
         document.getElementById(getOpponentTeamID(id.id, prefix[0], "OT")).disabled = true;
     }
         
     if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
         var countrylabel = id.parentNode.parentNode.getElementsByTagName("span")[0].innerText;
-        console.log("countrylabel: " + countrylabel);
         var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
         var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
         var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
@@ -81,7 +77,7 @@ function myFunction(elementID, nextStage)
         var inputP = document.createElement("input");
         inputP.type = "number";
         inputP.id = getNextStage(id.id, nextStage, "P");
-        inputP.name = getNextStage(id.id, res[0], "P");
+        inputP.name = getNextStage(id.id, res[0], nextStage + "P");
         inputP.min = 0;
         inputP.max = 20;
         inputP.disabled = true;
@@ -89,7 +85,7 @@ function myFunction(elementID, nextStage)
         var inputOT = document.createElement("input");
         inputOT.type = "number";
         inputOT.id = getNextStage(id.id, nextStage, "OT");
-        inputOT.name = getNextStage(id.id, res[0], "OT");
+        inputOT.name = getNextStage(id.id, res[0], nextStage + "OT");
         inputOT.min = 0;
         inputOT.max = 20;
         inputOT.disabled = true;
@@ -97,7 +93,7 @@ function myFunction(elementID, nextStage)
         var inputFT = document.createElement("input");
         inputFT.type = "number";
         inputFT.id = getNextStage(id.id, nextStage, "FT");
-        inputFT.name = getNextStage(id.id, res[0], "FT");
+        inputFT.name = getNextStage(id.id, res[0], nextStage + "FT");
         inputFT.min = 0;
         inputFT.max = 20;
         inputFT.disabled = false;
@@ -124,7 +120,6 @@ function myFunction(elementID, nextStage)
 
     if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
         var countrylabel = x.parentNode.parentNode.getElementsByTagName("span")[0].innerText;
-        console.log("countrylabel: " + countrylabel);
         var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
         var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
         var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
@@ -142,7 +137,7 @@ function myFunction(elementID, nextStage)
         var inputP = document.createElement("input");
         inputP.type = "number";
         inputP.id = getNextStage(id.id, nextStage, "P");
-        inputP.name = getNextStage(id.id, res[0], "P");
+        inputP.name = getNextStage(id.id, res[0], nextStage + "P");
         inputP.min = 0;
         inputP.max = 20;
         inputP.disabled = true;
@@ -150,7 +145,7 @@ function myFunction(elementID, nextStage)
         var inputOT = document.createElement("input");
         inputOT.type = "number";
         inputOT.id = getNextStage(id.id, nextStage, "OT");
-        inputOT.name = getNextStage(id.id, res[0], "OT");
+        inputOT.name = getNextStage(id.id, res[0], nextStage + "OT");
         inputOT.min = 0;
         inputOT.max = 20;
         inputOT.disabled = true;
@@ -158,7 +153,7 @@ function myFunction(elementID, nextStage)
         var inputFT = document.createElement("input");
         inputFT.type = "number";
         inputFT.id = getNextStage(id.id, nextStage, "FT");
-        inputFT.name = getNextStage(id.id, res[0], "FT");
+        inputFT.name = getNextStage(id.id, res[0], nextStage + "FT");
         inputFT.min = 0;
         inputFT.max = 20;
         inputFT.disabled = false;
@@ -290,4 +285,16 @@ function getOpponentTeamID(id, label, prefix) {
     }
 
     return str2;
+}
+
+function getAllInputFields() {
+    var inputs, index;
+
+    inputs = document.getElementsByTagName('input');
+    for (index = 0; index < inputs.length; ++index) {
+        if(inputs[index].value.length > 0) {
+            console.log("value: -" + inputs[index].value + "-" + inputs[index].value.length);
+            console.log(inputs[index]);
+        }
+    }
 }

@@ -1,4 +1,42 @@
 extends layout
 
 block content
-    h1 Final Stage Result
+    - function getNghia(text) { return text + "Nghia"; }
+    h1=result[0].username
+    div(class="round") Round of 16
+        for r, i in result[0]
+            p #{i} #{getNghia(r)}
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" data-teamid="1" data-resultid="team-1")
+                    div(class="flaglabel")
+                        img(src="images/BRA.svg.png" height="50" width="50")
+                    div(class="countrylabel")
+                        span Brazil
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        input(type="number" id="R16_P1" name="BRA_P1" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        input(type="number" id="R16_OT1" name="BRA_OT1" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        input(type="number" id="R16_FT1" name="BRA_FT1" min="0" max="20" onchange="myFunction('R16_FT1', 'QF')")
+                div(class="team" data-teamid="2" data-resultid="team-2")
+                    div(class="flaglabel")
+                        img(src="images/CRO.svg.png" height="50" width="50")
+                    div(class="countrylabel")
+                        span Croatia
+                    div(class="score" data-resultid="result-2")
+                        label P
+                        input(type="number" id="R16_P2" name="CRO_P2" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-2")
+                        label OT
+                        input(type="number" id="R16_OT2" name="CRO_OT2" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-2")
+                        label FT
+                        input(type="number" id="R16_FT2" name="CRO_FT2" min="0" max="20" onchange="myFunction('R16_FT2', 'QF')")
+
+
+        each r, i in games
+            p=r.team1_key

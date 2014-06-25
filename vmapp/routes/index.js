@@ -8,7 +8,8 @@ var db_leaderboard = monk(dbserver + '/leaderboard');
 var db_gamesresult = monk(dbserver + '/gamesresult');
 var db_games = monk(dbserver + '/games');
 var db_gamesskeleton = monk(dbserver + '/gamesskeleton');
-var db_userprofiles = monk(dbserver + '/userprofile') 
+var db_userprofiles = monk(dbserver + '/userprofile');
+var db_finalstageresult = monk(dbserver + '/finalstageresult'); 
 
 
 module.exports = function(app, passport) {
@@ -162,11 +163,62 @@ module.exports = function(app, passport) {
 
     app.post('/finalstageresult', function(req, res) {
         console.log("finalstageresult: " + JSON.stringify(req.body));
-        res.render('finalstageresult');
+
+        var finalstage = [];
+        var tempStr = "";
+        var lastTeam = "";
+
+        for (var param in req.body) {
+            var str = param.split("_");
+
+            console.log(str[0], str[1], str[0].indexOf(lastTeam));
+
+            if (lastTeam == "" || str[0].indexOf(lastTeam) == -1) {
+                console.log("str[0].indexOf(lastTeam) == -1");
+
+                if (lastTeam.length > 0) {
+                    finalstage.push(tempStr);
+                }
+
+                tempStr = str[0] + ":";
+                lastTeam = str[0];
+            }
+
+            if (str[1].indexOf("P") > -1) {
+                tempStr += req.body[param] + ":";
+            }
+
+            if (str[1].indexOf("OT") > -1) {
+                tempStr += req.body[param] + ":";
+                count++;  
+            }
+
+            if (str[1].indexOf("FT") > -1) {
+                tempStr += req.body[param];
+            }
+        }
+
+        finalstage.push(tempStr);
+
+        console.log("Skriver ut finalstage");
+
+        for (var elem in finalstage) {
+            console.log(elem, finalstage[elem]);
+        }
+
     });
 
     app.get('/finalstageresult', function(req, res) {
-        res.render('finalstageresult');
+        var col_finalstageresult = db_finalstageresult.get('usercollection');
+        var col_games = db_games.get('usercollection');
+        col_games.find({},{},function(e,games){
+            col_finalstageresult.find({},{},function(e,docs){
+                res.render('finalstageresult', {
+                    "result" : docs,
+                    "games" : games
+                });
+            });
+        });
     });
 
     /* GET Userlist page. */

@@ -20,8 +20,9 @@ $(document).ready(function() {
             });
     });
 
+    $("#finalStageButton").click(function() {
 
-        
+    }); 
 });
 
 function myFunction(elementID, nextStage)
@@ -297,4 +298,8 @@ function getAllInputFields() {
             console.log(inputs[index]);
         }
     }
+}
+
+function getNghia(text) {
+    return text + "Nghia"; 
 }

@@ -31,7 +31,7 @@ module.exports = function(app, passport) {
 
     // process the login form
     app.post('/login', passport.authenticate('local-login', {
-        successRedirect : '/games', // redirect to the secure profile section
+        successRedirect : '/finalstage', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
@@ -48,7 +48,7 @@ module.exports = function(app, passport) {
 
     // process the signup form
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect : '/games', // redirect to the secure profile section
+        successRedirect : '/finalstage', // redirect to the secure profile section
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
@@ -153,11 +153,14 @@ module.exports = function(app, passport) {
     });
 
     app.get('/finalstage', isLoggedIn, function(req, res) {
-        var collection = db_games.get('usercollection');
-        collection.find({},{},function(e,docs){
-            res.render('finalstage', {
-                "games" : docs
-            });
+        var collection = db_finalstageresult.get('usercollection');
+        collection.count({'username' : req.user.local.email},function(e,count){
+            if (count == 0) {
+                res.render('finalstage');
+            }
+            else {
+                res.render('finalstageresult');
+            }
         });
     });
 
@@ -165,15 +168,30 @@ module.exports = function(app, passport) {
         var finalstage = [];
         var tempStr = "";
         var lastTeam = "";
+        var p = "";
+        var ot = "";
+        var ft = "";
 
         for (var param in req.body) {
             var str = param.split("_");
 
-            console.log(str[0], str[1], str[0].indexOf(lastTeam));
+            console.log(str[0], str[1], str[0].indexOf(lastTeam), lastTeam, str[0] != lastTeam);
 
             if (lastTeam == "" || str[0].indexOf(lastTeam) == -1) {
-                if (lastTeam.length > 0) {
+                if (lastTeam.length > 0 && str[0] != lastTeam) {
+                    tempStr += ft;
+
+                    if (ot.length > 0) {
+                        tempStr += ":" + ot;
+                    }
+                    if (p.length > 0) {
+                        tempStr += ":" + p;
+                    }
+
                     finalstage.push(tempStr.split(":"));
+                    p = "";
+                    ot = "";
+                    ft = "";
                 }
 
                 tempStr = str[0] + ":";
@@ -182,16 +200,24 @@ module.exports = function(app, passport) {
             }
 
             if (str[1].indexOf("P") > -1) {
-                tempStr += req.body[param] + ":";
+                p = req.body[param];
             }
 
             if (str[1].indexOf("OT") > -1) {
-                tempStr += req.body[param] + ":";
+                ot = req.body[param];
             }
 
             if (str[1].indexOf("FT") > -1) {
-                tempStr += req.body[param];
+                ft =  req.body[param];
             }
+        }
+
+        tempStr += ft;
+        if (ot.length > 0) {
+            tempStr += ":" + ot;
+        }
+        if (p.length > 0) {
+            tempStr += ":" + p;
         }
 
         finalstage.push(tempStr.split(":"));
@@ -247,23 +273,50 @@ module.exports = function(app, passport) {
                 // If it worked, set the header so the address bar doesn't still say /adduser
                 res.location("finalstageresult");
                 // And forward to success page
-                res.redirect("finalstageresult?id=" + uuid1);
+                res.redirect("finalstageresult");
             }
         });
 
     });
 
-    app.get('/finalstageresult', function(req, res) {
+    app.get('/finalstageresult', isLoggedIn, function(req, res) {
+        var id = req.query.id;
+
         var col_finalstageresult = db_finalstageresult.get('usercollection');
         var col_games = db_games.get('usercollection');
-        col_games.find({},{},function(e,games){
-            col_finalstageresult.find({},{},function(e,docs){
-                res.render('finalstageresult', {
-                    "result" : docs,
-                    "games" : games
-                });
+        if (id != null) {
+            col_finalstageresult.findOne({'uuid' : id},{},function(e,docs){
+                if (docs) {
+                    col_games.find({},{},function(e,games){
+                        res.render('finalstageresult', {
+                            "result" : docs,
+                            "games" : games
+                        });
+                    });
+                }
+                else {
+                    res.render('leaderboard');
+                }
+                
             });
-        });
+        }
+        else {
+            col_finalstageresult.findOne({'username' : req.user.local.email},function(e,docs){
+                console.log("get:finalstageresult  " + docs);
+
+                if (docs) {
+                    col_games.find({},{},function(e,games){
+                        res.render('finalstageresult', {
+                            "result" : docs,
+                            "games" : games
+                        });
+                    });
+                }
+                else {
+                    res.render('finalstage');
+                }
+            });
+        }
     });
 
     /* GET Userlist page. */
@@ -552,14 +605,14 @@ function getCountryName(country) {
         return "Greece";
     if (country == "ARG")
         return "Argentina";
-    if (country == "BRA")
-        return "Brazil";
-    if (country == "BRA")
-        return "Brazil";
-    if (country == "BRA")
-        return "Brazil";
-    if (country == "BRA")
-        return "Brazil";
+    if (country == "GER")
+        return "Germany";
+    if (country == "BEL")
+        return "Belgia";
+    if (country == "ALG")
+        return "Algeria";
+    if (country == "USA")
+        return "USA";
 
     return "";
 }

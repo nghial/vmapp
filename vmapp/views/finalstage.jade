@@ -1,8 +1,10 @@
 extends layout
 
 block content
+  h1 Fill in your final stage prediction
+
   form(name="finalStageForm" method="post" action="/finalstageresult")  
-      input(type="submit" value="submitScore")
+      input(type="submit" id="finalStageButton")
       div(class="round") Round of 16
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
@@ -13,13 +15,13 @@ block content
                         span Brazil
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P1" name="BRA_P1" min="0" max="20" disabled)
+                        input(type="number" id="R16_P1" name="BRA_P1" min="0" max="20" onchange="myFunction('P', 'R16_P1', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT1" name="BRA_OT1" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT1" name="BRA_OT1" min="0" max="20" onchange="myFunction('OT', 'R16_OT1', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT1" name="BRA_FT1" min="0" max="20" onchange="myFunction('R16_FT1', 'QF')")
+                        input(type="number" id="R16_FT1" name="BRA_FT1" min="0" max="20" onchange="myFunction('FT', 'R16_FT1', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/CHI.svg.png" height="50" width="50")
@@ -27,13 +29,13 @@ block content
                         span Chile
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P2" name="CHI_P2" min="0" max="20" disabled)
+                        input(type="number" id="R16_P2" name="CHI_P2" min="0" max="20" onchange="myFunction('P', 'R16_P2', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT2" name="CHI_OT2" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT2" name="CHI_OT2" min="0" max="20" onchange="myFunction('OT', 'R16_OT2', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT2" name="CHI_FT2" min="0" max="20" onchange="myFunction('R16_FT2', 'QF')")
+                        input(type="number" id="R16_FT2" name="CHI_FT2" min="0" max="20" onchange="myFunction('FT', 'R16_FT2', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
@@ -43,13 +45,13 @@ block content
                         span Colombia
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P3" name="COL_P3" min="0" max="20" disabled)
+                        input(type="number" id="R16_P3" name="COL_P3" min="0" max="20" onchange="myFunction('P', 'R16_P3', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT3" name="COL_OT3" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT3" name="COL_OT3" min="0" max="20" onchange="myFunction('OT', 'R16_OT3', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT3" name="COL_FT3" min="0" max="20" onchange="myFunction('R16_FT3', 'QF')")
+                        input(type="number" id="R16_FT3" name="COL_FT3" min="0" max="20" onchange="myFunction('FT', 'R16_FT3', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/URU.svg.png" height="50" width="50")
@@ -57,13 +59,13 @@ block content
                         span Uruguay
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P4" name="URU_P4" min="0" max="20" disabled)
+                        input(type="number" id="R16_P4" name="URU_P4" min="0" max="20" onchange="myFunction('P', 'R16_P4', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT4" name="URU_OT4" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT4" name="URU_OT4" min="0" max="20" onchange="myFunction('OT', 'R16_OT4', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT4" name="URU_FT4" min="0" max="20" onchange="myFunction('R16_FT4', 'QF')")
+                        input(type="number" id="R16_FT4" name="URU_FT4" min="0" max="20" onchange="myFunction('FT', 'R16_FT4', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
@@ -73,13 +75,13 @@ block content
                         span France
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P5" name="FRA_P5" min="0" max="20" disabled)
+                        input(type="number" id="R16_P5" name="FRA_P5" min="0" max="20" onchange="myFunction('P', 'R16_P5', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT5" name="FRA_OT5" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT5" name="FRA_OT5" min="0" max="20" onchange="myFunction('OT', 'R16_OT5', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT5" name="FRA_FT5" min="0" max="20" onchange="myFunction('R16_FT5', 'QF')")
+                        input(type="number" id="R16_FT5" name="FRA_FT5" min="0" max="20" onchange="myFunction('FT', 'R16_FT5', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/NGA.svg.png" height="50" width="50")
@@ -87,43 +89,43 @@ block content
                         span Nigeria
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P6" name="NGA_P6" min="0" max="20" disabled)
+                        input(type="number" id="R16_P6" name="NGA_P6" min="0" max="20" onchange="myFunction('P', 'R16_P6', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT6" name="NGA_OT6" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT6" name="NGA_OT6" min="0" max="20" onchange="myFunction('OT', 'R16_OT6', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT6" name="NGA_FT6" min="0" max="20" onchange="myFunction('R16_FT6', 'QF')")
+                        input(type="number" id="R16_FT6" name="NGA_FT6" min="0" max="20" onchange="myFunction('FT', 'R16_FT6', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
                     div(class="flaglabel")
-                        img(src="images/ESP.svg.png" height="50" width="50")
+                        img(src="images/GER.svg.png" height="50" width="50")
                     div(class="countrylabel")
-                        span Spain
+                        span Germany
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P7" name="ESP_P7" min="0" max="20" disabled)
+                        input(type="number" id="R16_P7" name="GER_P7" min="0" max="20" onchange="myFunction('P', 'R16_P7', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT7" name="ESP_OT7" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT7" name="GER_OT7" min="0" max="20" onchange="myFunction('OT', 'R16_OT7', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT7" name="ESP_FT7" min="0" max="20" onchange="myFunction('R16_FT7', 'QF')")
+                        input(type="number" id="R16_FT7" name="GER_FT7" min="0" max="20" onchange="myFunction('FT', 'R16_FT7', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
-                        img(src="images/FRA.svg.png" height="50" width="50")
+                        img(src="images/ALG.svg.png" height="50" width="50")
                     div(class="countrylabel")
-                        span France
+                        span Algeria
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P8" name="FRA_P8" min="0" max="20" disabled)
+                        input(type="number" id="R16_P8" name="ALG_P8" min="0" max="20" onchange="myFunction('P', 'R16_P8', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT8" name="FRA_OT8" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT8" name="ALG_OT8" min="0" max="20" onchange="myFunction('OT', 'R16_OT8', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT8" name="FRA_FT8" min="0" max="20" onchange="myFunction('R16_FT8', 'QF')")
+                        input(type="number" id="R16_FT8" name="ALG_FT8" min="0" max="20" onchange="myFunction('FT', 'R16_FT8', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
@@ -133,13 +135,13 @@ block content
                         span Netherland
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P9" name="NED_P9" min="0" max="20" disabled)
+                        input(type="number" id="R16_P9" name="NED_P9" min="0" max="20" onchange="myFunction('P', 'R16_P9', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT9" name="NED_OT9" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT9" name="NED_OT9" min="0" max="20" onchange="myFunction('OT', 'R16_OT9', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT9" name="NED_FT9" min="0" max="20" onchange="myFunction('R16_FT9', 'QF')")
+                        input(type="number" id="R16_FT9" name="NED_FT9" min="0" max="20" onchange="myFunction('FT', 'R16_FT9', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/MEX.svg.png" height="50" width="50")
@@ -147,13 +149,13 @@ block content
                         span Mexico
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P10" name="MEX_P10" min="0" max="20" disabled)
+                        input(type="number" id="R16_P10" name="MEX_P10" min="0" max="20" onchange="myFunction('P', 'R16_P10', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT10" name="MEX_OT10" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT10" name="MEX_OT10" min="0" max="20" onchange="myFunction('OT', 'R16_OT10', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT10" name="MEX_FT10" min="0" max="20" onchange="myFunction('R16_FT10', 'QF')")
+                        input(type="number" id="R16_FT10" name="MEX_FT10" min="0" max="20" onchange="myFunction('FT', 'R16_FT10', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
@@ -163,13 +165,13 @@ block content
                         span Costa Rica
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P11" name="CRC_P11" min="0" max="20" disabled)
+                        input(type="number" id="R16_P11" name="CRC_P11" min="0" max="20" onchange="myFunction('P', 'R16_P11', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT11" name="CRC_OT11" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT11" name="CRC_OT11" min="0" max="20" onchange="myFunction('OT', 'R16_OT11', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT11" name="CRC_FT11" min="0" max="20" onchange="myFunction('R16_FT11', 'QF')")
+                        input(type="number" id="R16_FT11" name="CRC_FT11" min="0" max="20" onchange="myFunction('FT', 'R16_FT11', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/GRE.svg.png" height="50" width="50")
@@ -177,13 +179,13 @@ block content
                         span Greece
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P12" name="GRE_P12" min="0" max="20" disabled)
+                        input(type="number" id="R16_P12" name="GRE_P12" min="0" max="20" onchange="myFunction('P', 'R16_P12', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT12" name="GRE_OT12" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT12" name="GRE_OT12" min="0" max="20" onchange="myFunction('OT', 'R16_OT12', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT12" name="GRE_FT12" min="0" max="20" onchange="myFunction('R16_FT12', 'QF')")
+                        input(type="number" id="R16_FT12" name="GRE_FT12" min="0" max="20" onchange="myFunction('FT', 'R16_FT12', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
@@ -193,13 +195,13 @@ block content
                         span Argentina
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P13" name="ARG_P13" min="0" max="20" disabled)
+                        input(type="number" id="R16_P13" name="ARG_P13" min="0" max="20" onchange="myFunction('P', 'R16_P13', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT13" name="ARG_OT13" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT13" name="ARG_OT13" min="0" max="20" onchange="myFunction('OT', 'R16_OT13', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT13" name="ARG_FT13" min="0" max="20" onchange="myFunction('R16_FT13', 'QF')")
+                        input(type="number" id="R16_FT13" name="ARG_FT13" min="0" max="20" onchange="myFunction('FT', 'R16_FT13', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/SUI.svg.png" height="50" width="50")
@@ -207,29 +209,29 @@ block content
                         span Switzerland
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P14" name="SUI_P14" min="0" max="20" disabled)
+                        input(type="number" id="R16_P14" name="SUI_P14" min="0" max="20" onchange="myFunction('P', 'R16_P14', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT14" name="SUI_OT14" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT14" name="SUI_OT14" min="0" max="20" onchange="myFunction('OT', 'R16_OT14', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT14" name="SUI_FT14" min="0" max="20" onchange="myFunction('R16_FT14', 'QF')")
+                        input(type="number" id="R16_FT14" name="SUI_FT14" min="0" max="20" onchange="myFunction('FT', 'R16_FT14', 'QF')")
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
                 div(class="team" data-teamid="1" data-resultid="team-1")
                     div(class="flaglabel")
-                        img(src="images/RUS.svg.png" height="50" width="50")
+                        img(src="images/BEL.svg.png" height="50" width="50")
                     div(class="countrylabel")
-                        span Russia
+                        span Belgia
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P15" name="RUS_P15" min="0" max="20" disabled)
+                        input(type="number" id="R16_P15" name="BEL_P15" min="0" max="20" onchange="myFunction('P', 'R16_P15', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT15" name="RUS_OT15" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT15" name="BEL_OT15" min="0" max="20" onchange="myFunction('OT', 'R16_OT15', 'QF')" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT15" name="RUS_FT15" min="0" max="20" onchange="myFunction('R16_FT15', 'QF')")
+                        input(type="number" id="R16_FT15" name="BEL_FT15" min="0" max="20" onchange="myFunction('FT', 'R16_FT15', 'QF')")
                 div(class="team" data-teamid="2" data-resultid="team-2")
                     div(class="flaglabel")
                         img(src="images/USA.svg.png" height="50" width="50")
@@ -237,13 +239,13 @@ block content
                         span USA
                     div(class="score" data-resultid="result-2")
                         label P
-                        input(type="number" id="R16_P16" name="USA_P16" min="0" max="20" disabled)
+                        input(type="number" id="R16_P16" name="USA_P16" min="0" max="20" onchange="myFunction('P', 'R16_P16', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label OT
-                        input(type="number" id="R16_OT16" name="USA_OT16" min="0" max="20" disabled)
+                        input(type="number" id="R16_OT16" name="USA_OT16" min="0" max="20" onchange="myFunction('OT', 'R16_OT16', 'QF')" disabled)
                     div(class="score" data-resultid="result-2")
                         label FT
-                        input(type="number" id="R16_FT16" name="USA_FT16" min="0" max="20" onchange="myFunction('R16_FT16', 'QF')")
+                        input(type="number" id="R16_FT16" name="USA_FT16" min="0" max="20" onchange="myFunction('FT', 'R16_FT16', 'QF')")
       div(class="round") Quarter-finals
         div(class="matchQuarter" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")

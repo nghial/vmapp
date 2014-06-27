@@ -10,6 +10,7 @@ var db_games = monk(dbserver + '/games');
 var db_gamesskeleton = monk(dbserver + '/gamesskeleton');
 var db_userprofiles = monk(dbserver + '/userprofile');
 var db_finalstageresult = monk(dbserver + '/finalstageresult'); 
+var db = new mongo.Db('leaderboard', new mongo.Server('localhost', '27017', {fsync:true}));
 
 
 module.exports = function(app, passport) {
@@ -104,20 +105,83 @@ module.exports = function(app, passport) {
     });
 
     app.get('/leaderboard', function(req, res) {
-        var collection = db_leaderboard.get('usercollection');
-        var filter = {};
 
-        if(req.query.company != undefined && req.query.company != 'all'){               
-            filter = {'company': req.query.company};               
-        }
-    
-        collection.find({$query: filter, $orderby: { points : -1 }},{},function(e,docs){
-            res.render('leaderboard', {
-                "leaderboard" : docs,                    
-                "_place":0,
-                "_oldpoints":undefined
+        //var collection = db_leaderboard.get('usercollection').;
+            var filter = {};
+
+            if(req.query.company != undefined && req.query.company != 'all'){               
+                filter = {'company': req.query.company};               
+            }        
+
+            var mapGroup = function() {
+                                var key = this.name;
+                                var values = {groupPoints: this.points, id : this._id, name: this.name, company: this.company, uuid: this.uuid};
+                                emit(key, values);
+                           };
+
+           var mapFinal = function() {
+                                var key = this.name;
+                                var values = {finalPoints: this.points};
+                                emit(key, values);
+                            };
+
+            var reduceLeaderboard = function(key, values) {
+                                        var result = {};
+                                        values.forEach(function(value) {
+                                            for (field in value) {
+                                                result[field] = value[field];
+
+                                                if (field == 'groupPoints' || field == 'finalPoints'){
+                                                    if (result.hasOwnProperty('totalPoints')){
+                                                        result['totalPoints'] += value[field];
+                                                    }else{
+                                                      result['totalPoints'] = value[field];  
+                                                    }
+                                                    
+                                                }
+                                            }
+                                        });
+
+                                        return result;
+                                    };
+
+        db.open(function(error, dbClient) {
+            if (error){
+                throw error;
+            }   
+        
+            dbClient.collection('usercollection', function(err, collection) {
+
+                collection.mapReduce(
+                    mapGroup,
+                    reduceLeaderboard,
+                    { 'out': {'replace':"temp_lb_map_reduce"} },
+                    function(err, innerCollection){
+                        dbClient.collection('usercollection', function(err, collection) {
+
+                            collection.mapReduce(
+                                mapFinal,
+                                reduceLeaderboard,
+                                { out: {reduce:"temp_lb_map_reduce"} },
+                                function(err, reducedCollection){
+
+                                    db_leaderboard.get('temp_lb_map_reduce').find(
+                                        {$query: filter, $orderby: {  'value.totalPoints' : -1 }},
+                                        {},
+                                        function(e,docs){
+                                            console.log(docs);
+                                            res.render('leaderboard', {
+                                                "leaderboard" : docs,                    
+                                                "_place":0,
+                                                "_oldpoints":undefined
+                                            });
+                                        }).toArray; 
+                                });
+
+                        }); 
+                    });
             });
-        }).toArray;
+        });
     });
 
     /* GET Userlist page. */

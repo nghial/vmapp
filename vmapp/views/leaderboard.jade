@@ -16,19 +16,25 @@ block content
                             li: a(href="/leaderboard?company=AVA") Avanade
                             li: a(href="/leaderboard?company=AAS") Avdeling for Altinn og Seres                            
                             li: a(href="/leaderboard?company=BF") Basefarm
-                    th Points
+                    th Points from group stage
+                    th Points from final stage
+                    th Total points
             each entry, i in leaderboard
                 tr
                     td
-                        if entry.points != _oldpoints
-                            - _oldpoints = entry.points
+                        if entry.value.totalPoints != _oldpoints
+                            - _oldpoints = entry.value.totalPoints
                             - _place = i +1
                             p=_place
                         else
                             p=_place
                         //p='(' + (i+1) + ')'
                     td
-                        a(href="/gamesresult?id=" + entry.uuid, id="linkToUser")
-                            p=entry.name + ' ['+entry.company+']'
+                        a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")
+                            p=entry.value.name + ' ['+entry.value.company+']'
                     td 
-                        p=entry.points
+                        p=entry.value.groupPoints
+                    td
+                        p=entry.value.finalPoints
+                    td
+                        p=entry.value.totalPoints

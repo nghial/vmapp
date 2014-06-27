@@ -176,12 +176,16 @@ module.exports = function(app, passport) {
                                                 "_oldpoints":undefined
                                             });
                                         }).toArray; 
+
+                                    db.close();
                                 });
 
                         }); 
                     });
             });
         });
+
+        
     });
 
     /* GET Userlist page. */

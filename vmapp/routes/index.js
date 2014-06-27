@@ -227,7 +227,8 @@ module.exports = function(app, passport) {
                 res.render('finalstage');
             }
             else {
-                res.render('finalstageresult');
+                res.location("finalstageresult");
+                res.redirect("finalstageresult");
             }
         });
     });
@@ -353,7 +354,7 @@ module.exports = function(app, passport) {
         var col_finalstageresult = db_finalstageresult.get('usercollection');
         var col_games = db_games.get('usercollection');
         if (id != null) {
-            col_finalstageresult.findOne({'uuid' : id},{},function(e,docs){
+            col_finalstageresult.find({'uuid' : id},{},function(e,docs){
                 if (docs) {
                     col_games.find({},{},function(e,games){
                         res.render('finalstageresult', {
@@ -363,15 +364,14 @@ module.exports = function(app, passport) {
                     });
                 }
                 else {
-                    res.render('leaderboard');
+                    res.location("finalstage");
+                    res.redirect("finalstage");
                 }
                 
             });
         }
         else {
-            col_finalstageresult.findOne({'username' : req.user.local.email},function(e,docs){
-                console.log("get:finalstageresult  " + docs);
-
+            col_finalstageresult.find({'username' : req.user.local.email}, {}, function(e,docs){
                 if (docs) {
                     col_games.find({},{},function(e,games){
                         res.render('finalstageresult', {
@@ -381,7 +381,8 @@ module.exports = function(app, passport) {
                     });
                 }
                 else {
-                    res.render('finalstage');
+                    res.location("finalstage");
+                    res.redirect("finalstage");
                 }
             });
         }

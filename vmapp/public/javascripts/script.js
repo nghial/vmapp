@@ -59,19 +59,27 @@ function myFunction(time, elementID, nextStage)
 
     if (parseInt(id.value, 10 ) == parseInt(x.value, 10)) {
         setOverTimeField(id, prefix, false);
-        removeWinner(id, nextStage);
+
+        if (nextStage != "") {
+            removeWinner(id, nextStage);
+        }
     }
 
     if (parseInt(id.value, 10) != parseInt(x.value, 10)) {
         setOverTimeField(id, prefix, true);
+        setPenaltyField(id, prefix, true);
     }
         
     if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
-        transferWinner(id, nextStage);
+        if (nextStage != "") {
+            transferWinner(id, nextStage);
+        }
     }
 
     if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
-        transferWinner(x, nextStage);
+        if (nextStage != "") {
+            transferWinner(x, nextStage);
+        }
     }
 }
 
@@ -89,11 +97,15 @@ function handlePenalties(elementID, nextStage) {
     }
         
     if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
-        transferWinner(id, nextStage);
+        if (nextStage != "") {
+            transferWinner(id, nextStage);
+        }
     }
 
     if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
-        transferWinner(x, nextStage);
+        if (nextStage != "") {
+            transferWinner(x, nextStage);
+        }
     }
 }
 
@@ -108,7 +120,10 @@ function handleOverTime(elementID, nextStage) {
 
     if (parseInt(id.value, 10 ) == parseInt(x.value, 10)) {
         setPenaltyField(id, prefix, false);
-        removeWinner(id, nextStage);
+        
+        if (nextStage != "") {
+            removeWinner(id, nextStage);    
+        }
     }
 
     if (parseInt(id.value, 10) != parseInt(x.value, 10)) {
@@ -116,11 +131,15 @@ function handleOverTime(elementID, nextStage) {
     }
         
     if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
-        transferWinner(id, nextStage);
+        if (nextStage != "") {
+            transferWinner(id, nextStage);
+        }
     }
 
     if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
-        transferWinner(x, nextStage);
+        if (nextStage != "") {
+            transferWinner(x, nextStage);
+        }
     }
 }
 
@@ -173,11 +192,9 @@ function transferWinner(id, nextStage) {
     inputP.min = 0;
     inputP.max = 20;
     inputP.disabled = true;
-    if (nextStage != "FF") {
-        inputP.onchange = function () {  
-            myFunction('P', getNextStage(id.id, nextStage, "P"), getNextFinalStage(nextStage));
-        };
-    }
+    inputP.onchange = function () {  
+        myFunction('P', getNextStage(id.id, nextStage, "P"), getNextFinalStage(nextStage));
+    };
     
     var inputOT = document.createElement("input");
     inputOT.type = "number";
@@ -186,11 +203,9 @@ function transferWinner(id, nextStage) {
     inputOT.min = 0;
     inputOT.max = 20;
     inputOT.disabled = true;
-    if (nextStage != "FF") {
-        inputOT.onchange = function () {  
-            myFunction('OT', getNextStage(id.id, nextStage, "OT"), getNextFinalStage(nextStage));
-        };
-    }
+    inputOT.onchange = function () {  
+        myFunction('OT', getNextStage(id.id, nextStage, "OT"), getNextFinalStage(nextStage));
+    };
 
     var inputFT = document.createElement("input");
     inputFT.type = "number";
@@ -199,11 +214,9 @@ function transferWinner(id, nextStage) {
     inputFT.min = 0;
     inputFT.max = 20;
     inputFT.disabled = false;
-    if (nextStage != "FF") {
-        inputFT.onchange = function () {  
-            myFunction('FT', getNextStage(id.id, nextStage, "FT"), getNextFinalStage(nextStage));
-        };
-    }
+    inputFT.onchange = function () {  
+        myFunction('FT', getNextStage(id.id, nextStage, "FT"), getNextFinalStage(nextStage));
+    };
 
     if(nextMatchFlag.firstElementChild == null) {
         nextMatchFlag.appendChild(img);
@@ -243,6 +256,8 @@ function getNextFinalStage(stage) {
         nextStage = "SF"
     if (stage == "SF")
         nextStage = "FF"
+    if (stage == "FF")
+        nextStage = ""
 
     return nextStage;
 }

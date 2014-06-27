@@ -355,7 +355,7 @@ module.exports = function(app, passport) {
         var col_games = db_games.get('usercollection');
         if (id != null) {
             col_finalstageresult.find({'uuid' : id}, {}, function(e,docs){
-                if (!e) {
+                if (typeof docs == 'undefined') {
                     res.location("finalstage");
                     res.redirect("finalstage");
                 }
@@ -371,7 +371,7 @@ module.exports = function(app, passport) {
         }
         else {
             col_finalstageresult.find({'username' : req.user.local.email}, {}, function(e,docs){
-                if (!e) {
+                if (typeof docs == 'undefined') {
                     res.location("finalstage");
                     res.redirect("finalstage");
                 }

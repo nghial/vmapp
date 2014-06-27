@@ -12,6 +12,11 @@ input {
     width: 37px;
 }
 
+input#finalStageButton {
+    width: 65px;
+    border: 10px;
+}
+
 #test td{
     border: solid black 1px;
 }
@@ -191,6 +196,7 @@ input {
     margin-top: 40px;
     margin-right: 40px;
     float: left;
+    font-weight:bold;
 }
 
 .match {

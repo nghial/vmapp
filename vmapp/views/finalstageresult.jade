@@ -1,42 +1,742 @@
 extends layout
 
 block content
-    - function getNghia(text) { return text + "Nghia"; }
     h1=result[0].username
     div(class="round") Round of 16
-        for r, i in result[0]
-            p #{i} #{getNghia(r)}
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
-                div(class="team" data-teamid="1" data-resultid="team-1")
+                div(class="team" )
                     div(class="flaglabel")
-                        img(src="images/BRA.svg.png" height="50" width="50")
+                        img(src="images/" + result[0].fs0[0] + ".svg.png", height="50", width="50")
                     div(class="countrylabel")
-                        span Brazil
+                        span= result[0].fs0[1]
                     div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P1" name="BRA_P1" min="0" max="20" disabled)
+                        if result[0].fs0.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs0[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
                     div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT1" name="BRA_OT1" min="0" max="20" disabled)
+                        if result[0].fs0.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs0[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
                     div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT1" name="BRA_FT1" min="0" max="20" onchange="myFunction('R16_FT1', 'QF')")
-                div(class="team" data-teamid="2" data-resultid="team-2")
+                        if result[0].fs0.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs0[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
                     div(class="flaglabel")
-                        img(src="images/CRO.svg.png" height="50" width="50")
+                        img(src="images/" + result[0].fs1[0] + ".svg.png", height="50", width="50")
                     div(class="countrylabel")
-                        span Croatia
-                    div(class="score" data-resultid="result-2")
+                        span= result[0].fs1[1]
+                    div(class="score" data-resultid="result-1")
                         label P
-                        input(type="number" id="R16_P2" name="CRO_P2" min="0" max="20" disabled)
-                    div(class="score" data-resultid="result-2")
+                        if result[0].fs1.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs1[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
                         label OT
-                        input(type="number" id="R16_OT2" name="CRO_OT2" min="0" max="20" disabled)
-                    div(class="score" data-resultid="result-2")
+                        if result[0].fs1.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs1[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
                         label FT
-                        input(type="number" id="R16_FT2" name="CRO_FT2" min="0" max="20" onchange="myFunction('R16_FT2', 'QF')")
-
-
-        each r, i in games
-            p=r.team1_key
+                        if result[0].fs1.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs1[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs2[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs2[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs2.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs2[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs2.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs2[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs2.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs2[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs3[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs3[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs3.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs3[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs3.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs3[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs3.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs3[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)                    
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs4[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs4[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs4.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs4[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs4.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs4[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs4.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs4[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs5[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs5[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs5.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs5[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs5.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs5[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs5.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs5[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs6[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs6[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs6.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs6[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs6.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs6[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs6.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs6[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs7[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs7[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs7.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs7[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs7.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs7[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs7.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs7[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs8[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs8[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs8.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs8[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs8.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs8[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs8.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs8[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs9[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs9[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs9.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs9[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs9.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs9[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs9.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs9[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs10[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs10[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs10.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs10[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs10.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs10[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs10.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs10[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs11[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs11[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs11.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs11[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs11.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs11[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs11.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs11[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs12[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs12[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs12.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs12[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs12.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs12[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs12.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs12[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs13[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs13[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs13.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs13[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs13.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs13[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs13.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs13[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+        div(class="match" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                div(class="team" )
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs14[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs14[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs14.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs14[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs14.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs14[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs14.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs14[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                div(class="team")
+                    div(class="flaglabel")
+                        img(src="images/" + result[0].fs15[0] + ".svg.png", height="50", width="50")
+                    div(class="countrylabel")
+                        span= result[0].fs15[1]
+                    div(class="score" data-resultid="result-1")
+                        label P
+                        if result[0].fs15.length >= 5
+                            input(type="number" min="0" max="20" value=result[0].fs15[4] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label OT
+                        if result[0].fs15.length >= 4
+                            input(type="number" min="0" max="20" value=result[0].fs15[3] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+                    div(class="score" data-resultid="result-1")
+                        label FT
+                        if result[0].fs15.length >= 3
+                            input(type="number" min="0" max="20" value=result[0].fs15[2] readonly)
+                        else
+                            input(type="number" min="0" max="20" disabled)
+    div(class="round") Quarter-finals
+        div(class="matchQuarter" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs16 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs16[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs16[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs16.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs16[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs16.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs16[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs16.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs16[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs17 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs17[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs17[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs17.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs17[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs17.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs17[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs17.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs17[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+        div(class="matchQuarter" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs18 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs18[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs18[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs18.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs18[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs18.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs18[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs18.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs18[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs19 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs19[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs19[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs19.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs19[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs19.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs19[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs19.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs19[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+        div(class="matchQuarter" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs20 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs20[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs20[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs20.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs20[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs20.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs20[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs20.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs20[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs21 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs21[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs21[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs21.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs21[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs21.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs21[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs21.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs21[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+        div(class="matchQuarter" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs22 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs22[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs22[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs22.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs22[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs22.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs22[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs22.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs22[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs23 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel QF1" id="flaglabel_QF1")
+                            img(src="images/" + result[0].fs23[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel QF1" id="countrylabel_QF1")
+                            span= result[0].fs23[1]
+                        div(class="score" id="scoreP_QF1")
+                            label P
+                            if result[0].fs23.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs23[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_QF1")
+                            label OT
+                            if result[0].fs23.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs23[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_QF1")
+                            label FT
+                            if result[0].fs23.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs23[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+    div(class="round") Semi-finals
+        div(class="matchSemi" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs24 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel SF1" id="flaglabel_SF1")
+                            img(src="images/" + result[0].fs24[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel SF1" id="countrylabel_SF1")
+                            span= result[0].fs24[1]
+                        div(class="score" id="scoreP_SF1")
+                            label P
+                            if result[0].fs24.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs24[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_SF1")
+                            label OT
+                            if result[0].fs24.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs24[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_SF1")
+                            label FT
+                            if result[0].fs24.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs24[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs25 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel SF1" id="flaglabel_SF1")
+                            img(src="images/" + result[0].fs25[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel SF1" id="countrylabel_SF1")
+                            span= result[0].fs25[1]
+                        div(class="score" id="scoreP_SF1")
+                            label P
+                            if result[0].fs25.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs25[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_SF1")
+                            label OT
+                            if result[0].fs25.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs25[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_SF1")
+                            label FT
+                            if result[0].fs25.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs25[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+        div(class="matchSemi" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs26 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel SF1" id="flaglabel_SF1")
+                            img(src="images/" + result[0].fs26[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel SF1" id="countrylabel_SF1")
+                            span= result[0].fs26[1]
+                        div(class="score" id="scoreP_SF1")
+                            label P
+                            if result[0].fs26.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs26[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_SF1")
+                            label OT
+                            if result[0].fs26.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs26[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_SF1")
+                            label FT
+                            if result[0].fs26.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs26[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs27 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel SF1" id="flaglabel_SF1")
+                            img(src="images/" + result[0].fs27[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel SF1" id="countrylabel_SF1")
+                            span= result[0].fs27[1]
+                        div(class="score" id="scoreP_SF1")
+                            label P
+                            if result[0].fs27.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs27[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreOT_SF1")
+                            label OT
+                            if result[0].fs27.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs27[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score" id="scoreFT_SF1")
+                            label FT
+                            if result[0].fs27.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs27[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+    div(class="round") Final
+        div(class="matchFinal" style="height: 120px;")
+            div(class="teamContainer np" style="top: 50px;")
+                if result[0].fs28 != null
+                    div(class="team" data-teamid="1" data-resultid="team-1")
+                        div(class="flaglabel FF1" id="flaglabel_FF1")
+                            img(src="images/" + result[0].fs28[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel FF1" id="countrylabel_FF1")
+                            span= result[0].fs28[1]
+                        div(class="score")
+                            label P
+                            if result[0].fs28.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs28[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score")
+                            label OT
+                            if result[0].fs28.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs28[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score")
+                            label FT
+                            if result[0].fs28.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs28[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                if result[0].fs29 != null
+                    div(class="team" data-teamid="2" data-resultid="team-2")
+                        div(class="flaglabel FF1" id="flaglabel_FF1")
+                            img(src="images/" + result[0].fs29[0] + ".svg.png", height="50", width="50")
+                        div(class="countrylabel FF1" id="countrylabel_FF1")
+                            span= result[0].fs29[1]
+                        div(class="score")
+                            label P
+                            if result[0].fs29.length >= 5
+                                input(type="number" min="0" max="20" value=result[0].fs29[4] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score")
+                            label OT
+                            if result[0].fs29.length >= 4
+                                input(type="number" min="0" max="20" value=result[0].fs29[3] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)
+                        div(class="score")
+                            label FT
+                            if result[0].fs29.length >= 3
+                                input(type="number" min="0" max="20" value=result[0].fs29[2] readonly)
+                            else
+                                input(type="number" min="0" max="20" disabled)

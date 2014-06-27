@@ -11,22 +11,44 @@ $(document).ready(function() {
 
                     if(navigator.appName == "Microsoft Internet Explorer"){
                             event.returnValue = false;
-                            return false;
                     }
                     else{
                             event.preventDefault();
-                            return false;
                     }
+
+                    return false;
             });
     });
 
     $("#finalStageButton").click(function() {
+        if ($(".countrylabel span").length == 30) {
+            return;
+        }
+        
+        alert("You have to predict all the matches");
 
+        if(navigator.appName == "Microsoft Internet Explorer"){
+                event.returnValue = false;
+        }
+        else{
+                event.preventDefault();
+        }
+
+        return false;
     }); 
 });
 
-function myFunction(elementID, nextStage)
+function myFunction(time, elementID, nextStage)
 {
+    if (time == 'P') {
+        handlePenalties(elementID, nextStage);
+        return;
+    }
+    else if (time == 'OT') {
+        handleOverTime(elementID, nextStage);
+        return;
+    }
+
     var id=document.getElementById(elementID);
     var prefix=id.id.split("_");
 
@@ -36,152 +58,179 @@ function myFunction(elementID, nextStage)
         return;
 
     if (parseInt(id.value, 10 ) == parseInt(x.value, 10)) {
-        document.getElementById(getMyElementID(id.id, prefix[0], "OT")).disabled = false;
-        document.getElementById(getOpponentTeamID(id.id, prefix[0], "OT")).disabled = false;
-
-        var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
-        var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
-        var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
-        var nextMatchScoreOT = document.getElementById(getNextStage(id.id, "scoreOT", nextStage));
-        var nextMatchScoreFT = document.getElementById(getNextStage(id.id, "scoreFT", nextStage));
-        
-        if(nextMatchFlag.firstElementChild != null) {
-            nextMatchFlag.removeChild(nextMatchFlag.firstElementChild);
-            nextMatchCountry.removeChild(nextMatchCountry.firstElementChild);
-            nextMatchScoreP.removeChild(nextMatchScoreP.lastChild);
-            nextMatchScoreOT.removeChild(nextMatchScoreOT.lastChild);
-            nextMatchScoreFT.removeChild(nextMatchScoreFT.lastChild);
-        }
+        setOverTimeField(id, prefix, false);
+        removeWinner(id, nextStage);
     }
 
     if (parseInt(id.value, 10) != parseInt(x.value, 10)) {
-        document.getElementById(getMyElementID(id.id, prefix[0], "OT")).disabled = true;
-        document.getElementById(getOpponentTeamID(id.id, prefix[0], "OT")).disabled = true;
+        setOverTimeField(id, prefix, true);
     }
         
     if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
-        var countrylabel = id.parentNode.parentNode.getElementsByTagName("span")[0].innerText;
-        var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
-        var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
-        var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
-        var nextMatchScoreOT = document.getElementById(getNextStage(id.id, "scoreOT", nextStage));
-        var nextMatchScoreFT = document.getElementById(getNextStage(id.id, "scoreFT", nextStage));
-
-        var res = id.name.split("_");
-        var img = new Image();
-        img.src = "images/" + res[0] + ".svg.png";
-        img.height = 50;
-        img.width = 50;
-        var countrySpan = document.createElement('span');
-        countrySpan.innerText = countrylabel;
-
-        var inputP = document.createElement("input");
-        inputP.type = "number";
-        inputP.id = getNextStage(id.id, nextStage, "P");
-        inputP.name = getNextStage(id.id, res[0], nextStage + "P");
-        inputP.min = 0;
-        inputP.max = 20;
-        inputP.disabled = true;
-
-        var inputOT = document.createElement("input");
-        inputOT.type = "number";
-        inputOT.id = getNextStage(id.id, nextStage, "OT");
-        inputOT.name = getNextStage(id.id, res[0], nextStage + "OT");
-        inputOT.min = 0;
-        inputOT.max = 20;
-        inputOT.disabled = true;
-
-        var inputFT = document.createElement("input");
-        inputFT.type = "number";
-        inputFT.id = getNextStage(id.id, nextStage, "FT");
-        inputFT.name = getNextStage(id.id, res[0], nextStage + "FT");
-        inputFT.min = 0;
-        inputFT.max = 20;
-        inputFT.disabled = false;
-        inputFT.onchange = function () {  
-            myFunction(getNextStage(id.id, nextStage, "FT"), getNextFinalStage(nextStage));
-        };
-
-        if(nextMatchFlag.firstElementChild == null) {
-            nextMatchFlag.appendChild(img);
-            nextMatchCountry.appendChild(countrySpan);
-            nextMatchScoreP.appendChild(inputP);
-            nextMatchScoreOT.appendChild(inputOT);
-            nextMatchScoreFT.appendChild(inputFT);
-        }
-        else {
-            nextMatchFlag.replaceChild(img, nextMatchFlag.firstElementChild);
-            nextMatchCountry.replaceChild(countrySpan, nextMatchCountry.firstElementChild);
-            nextMatchScoreP.replaceChild(inputP, nextMatchScoreP.lastChild);
-            nextMatchScoreOT.replaceChild(inputOT, nextMatchScoreOT.lastChild);
-            nextMatchScoreFT.replaceChild(inputFT, nextMatchScoreFT.lastChild);
-        }
-            
+        transferWinner(id, nextStage);
     }
 
     if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
-        var countrylabel = x.parentNode.parentNode.getElementsByTagName("span")[0].innerText;
-        var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
-        var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
-        var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
-        var nextMatchScoreOT = document.getElementById(getNextStage(id.id, "scoreOT", nextStage));
-        var nextMatchScoreFT = document.getElementById(getNextStage(id.id, "scoreFT", nextStage));
-
-        var res = x.name.split("_");
-        var img = new Image();
-        img.src = "images/" + res[0] + ".svg.png";
-        img.height = 50;
-        img.width = 50;
-        var countrySpan = document.createElement('span');
-        countrySpan.innerText = countrylabel;
-
-        var inputP = document.createElement("input");
-        inputP.type = "number";
-        inputP.id = getNextStage(id.id, nextStage, "P");
-        inputP.name = getNextStage(id.id, res[0], nextStage + "P");
-        inputP.min = 0;
-        inputP.max = 20;
-        inputP.disabled = true;
-
-        var inputOT = document.createElement("input");
-        inputOT.type = "number";
-        inputOT.id = getNextStage(id.id, nextStage, "OT");
-        inputOT.name = getNextStage(id.id, res[0], nextStage + "OT");
-        inputOT.min = 0;
-        inputOT.max = 20;
-        inputOT.disabled = true;
-
-        var inputFT = document.createElement("input");
-        inputFT.type = "number";
-        inputFT.id = getNextStage(id.id, nextStage, "FT");
-        inputFT.name = getNextStage(id.id, res[0], nextStage + "FT");
-        inputFT.min = 0;
-        inputFT.max = 20;
-        inputFT.disabled = false;
-        inputFT.onchange = function () {  
-            myFunction(getNextStage(id.id, nextStage, "FT"), getNextFinalStage(nextStage));
-        };
-
-        if(nextMatchFlag.firstElementChild == null) {
-            nextMatchFlag.appendChild(img);
-            nextMatchCountry.appendChild(countrySpan);
-            nextMatchScoreP.appendChild(inputP);
-            nextMatchScoreOT.appendChild(inputOT);
-            nextMatchScoreFT.appendChild(inputFT);
-        }
-        else {
-            nextMatchFlag.replaceChild(img, nextMatchFlag.firstElementChild);
-            nextMatchCountry.replaceChild(countrySpan, nextMatchCountry.firstElementChild);
-            nextMatchScoreP.replaceChild(inputP, nextMatchScoreP.lastChild);
-            nextMatchScoreOT.replaceChild(inputOT, nextMatchScoreOT.lastChild);
-            nextMatchScoreFT.replaceChild(inputFT, nextMatchScoreFT.lastChild);
-        }
-            
+        transferWinner(x, nextStage);
     }
+}
+
+function handlePenalties(elementID, nextStage) {
+    var id=document.getElementById(elementID);
+    var prefix=id.id.split("_");
+
+    var x=document.getElementById(getOpponentTeamID(id.id, prefix[0], getPrefix(id.id)));
+
+    if (x == null)
+        return;
+
+    if (parseInt(id.value, 10 ) == parseInt(x.value, 10)) {
+        removeWinner(id, nextStage);
+    }
+        
+    if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
+        transferWinner(id, nextStage);
+    }
+
+    if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
+        transferWinner(x, nextStage);
+    }
+}
+
+function handleOverTime(elementID, nextStage) {
+    var id=document.getElementById(elementID);
+    var prefix=id.id.split("_");
+
+    var x=document.getElementById(getOpponentTeamID(id.id, prefix[0], getPrefix(id.id)));
+
+    if (x == null)
+        return;
+
+    if (parseInt(id.value, 10 ) == parseInt(x.value, 10)) {
+        setPenaltyField(id, prefix, false);
+        removeWinner(id, nextStage);
+    }
+
+    if (parseInt(id.value, 10) != parseInt(x.value, 10)) {
+        setPenaltyField(id, prefix, true);
+    }
+        
+    if (parseInt(id.value, 10) > parseInt(x.value, 10)) {
+        transferWinner(id, nextStage);
+    }
+
+    if (parseInt(id.value, 10 ) < parseInt(x.value, 10)) {
+        transferWinner(x, nextStage);
+    }
+}
+
+function setPenaltyField(id, prefix, value) {
+    document.getElementById(getMyElementID(id.id, prefix[0], "P")).disabled = value;
+    document.getElementById(getOpponentTeamID(id.id, prefix[0], "P")).disabled = value;
+}
+
+function setOverTimeField(id, prefix, value) {
+    document.getElementById(getMyElementID(id.id, prefix[0], "OT")).disabled = value;
+    document.getElementById(getOpponentTeamID(id.id, prefix[0], "OT")).disabled = value;
+}
+
+function removeWinner(id, nextStage) {
+    var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
+    var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
+    var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
+    var nextMatchScoreOT = document.getElementById(getNextStage(id.id, "scoreOT", nextStage));
+    var nextMatchScoreFT = document.getElementById(getNextStage(id.id, "scoreFT", nextStage));
+    
+    if(nextMatchFlag.firstElementChild != null) {
+        nextMatchFlag.removeChild(nextMatchFlag.firstElementChild);
+        nextMatchCountry.removeChild(nextMatchCountry.firstElementChild);
+        nextMatchScoreP.removeChild(nextMatchScoreP.lastChild);
+        nextMatchScoreOT.removeChild(nextMatchScoreOT.lastChild);
+        nextMatchScoreFT.removeChild(nextMatchScoreFT.lastChild);
+    }
+}
+
+function transferWinner(id, nextStage) {
+    var countrylabel = id.parentNode.parentNode.childNodes[1].childNodes[0].innerHTML;
+    var nextMatchFlag = document.getElementById(getNextStage(id.id, "flaglabel", nextStage));
+    var nextMatchCountry = document.getElementById(getNextStage(id.id, "countrylabel", nextStage));
+    var nextMatchScoreP = document.getElementById(getNextStage(id.id, "scoreP", nextStage));
+    var nextMatchScoreOT = document.getElementById(getNextStage(id.id, "scoreOT", nextStage));
+    var nextMatchScoreFT = document.getElementById(getNextStage(id.id, "scoreFT", nextStage));
+
+    var res = id.name.split("_");
+    var img = new Image();
+    img.src = "images/" + res[0] + ".svg.png";
+    img.height = 50;
+    img.width = 50;
+    var countrySpan = document.createElement('span');
+    countrySpan.innerHTML = countrylabel;
+
+    var inputP = document.createElement("input");
+    inputP.type = "number";
+    inputP.id = getNextStage(id.id, nextStage, "P");
+    inputP.name = getNextStage(id.id, res[0], nextStage + "P");
+    inputP.min = 0;
+    inputP.max = 20;
+    inputP.disabled = true;
+    if (nextStage != "FF") {
+        inputP.onchange = function () {  
+            myFunction('P', getNextStage(id.id, nextStage, "P"), getNextFinalStage(nextStage));
+        };
+    }
+    
+    var inputOT = document.createElement("input");
+    inputOT.type = "number";
+    inputOT.id = getNextStage(id.id, nextStage, "OT");
+    inputOT.name = getNextStage(id.id, res[0], nextStage + "OT");
+    inputOT.min = 0;
+    inputOT.max = 20;
+    inputOT.disabled = true;
+    if (nextStage != "FF") {
+        inputOT.onchange = function () {  
+            myFunction('OT', getNextStage(id.id, nextStage, "OT"), getNextFinalStage(nextStage));
+        };
+    }
+
+    var inputFT = document.createElement("input");
+    inputFT.type = "number";
+    inputFT.id = getNextStage(id.id, nextStage, "FT");
+    inputFT.name = getNextStage(id.id, res[0], nextStage + "FT");
+    inputFT.min = 0;
+    inputFT.max = 20;
+    inputFT.disabled = false;
+    if (nextStage != "FF") {
+        inputFT.onchange = function () {  
+            myFunction('FT', getNextStage(id.id, nextStage, "FT"), getNextFinalStage(nextStage));
+        };
+    }
+
+    if(nextMatchFlag.firstElementChild == null) {
+        nextMatchFlag.appendChild(img);
+        nextMatchCountry.appendChild(countrySpan);
+        nextMatchScoreP.appendChild(inputP);
+        nextMatchScoreOT.appendChild(inputOT);
+        nextMatchScoreFT.appendChild(inputFT);
+    }
+    else {
+        nextMatchFlag.replaceChild(img, nextMatchFlag.firstElementChild);
+        nextMatchCountry.replaceChild(countrySpan, nextMatchCountry.firstElementChild);
+        nextMatchScoreP.replaceChild(inputP, nextMatchScoreP.lastChild);
+        nextMatchScoreOT.replaceChild(inputOT, nextMatchScoreOT.lastChild);
+        nextMatchScoreFT.replaceChild(inputFT, nextMatchScoreFT.lastChild);
+    }
+
 }
 
 function getPrefix(id) {
     var str = id.split("_");
+    if (str[1].length === 2)
+        return str[1].slice(0,1);
+
+    if (str[1].indexOf("P") == 0 && str[1].length === 3) {
+        return str[1].slice(0,1);
+    }
+
     return str[1].slice(0,2);
 }
 
@@ -203,10 +252,18 @@ function getNextStage(id, label, prefix) {
     var str = matchid[1];
     var num = 0;
 
-    if (str.length == 3) {
-        num = str.slice(2,str.length);    
+    if (str.length == 2) {
+        num = str.slice(1,str.length);    
     }
-    if (str.length == 4) {
+    else if (str.length == 3) {
+        if (str.indexOf("P") == 0) {
+            num = str.slice(1,str.length);
+        }
+        else {
+            num = str.slice(2,str.length);   
+        }     
+    }
+    else if (str.length == 4) {
         num = str.slice(2,str.length); 
     }
 
@@ -246,10 +303,18 @@ function getMyElementID(id, label, prefix) {
     var str2 = "";
     var num = "";
 
-    if (str.length == 3) {
-        num = str.slice(2,str.length);    
+    if (str.length == 2) {
+        num = str.slice(1,str.length);    
     }
-    if (str.length == 4) {
+    else if (str.length == 3) {
+        if (str.indexOf("P") == 0) {
+            num = str.slice(1,str.length);
+        }
+        else {
+            num = str.slice(2,str.length);   
+        }   
+    }
+    else if (str.length == 4) {
         num = str.slice(2,str.length); 
     }
 
@@ -270,10 +335,18 @@ function getOpponentTeamID(id, label, prefix) {
     var str2 = "";
     var num = "";
 
-    if (str.length == 3) {
-        num = str.slice(2,str.length);    
+    if (str.length == 2) {
+        num = str.slice(1,str.length);    
     }
-    if (str.length == 4) {
+    else if (str.length == 3) {
+        if (str.indexOf("P") == 0) {
+            num = str.slice(1,str.length);
+        }
+        else {
+            num = str.slice(2,str.length);   
+        }
+    }
+    else if (str.length == 4) {
         num = str.slice(2,str.length); 
     }
 
@@ -298,8 +371,4 @@ function getAllInputFields() {
             console.log(inputs[index]);
         }
     }
-}
-
-function getNghia(text) {
-    return text + "Nghia"; 
 }

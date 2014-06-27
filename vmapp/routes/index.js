@@ -32,7 +32,7 @@ module.exports = function(app, passport) {
 
     // process the login form
     app.post('/login', passport.authenticate('local-login', {
-        successRedirect : '/games', // redirect to the secure profile section
+        successRedirect : '/finalstage', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
@@ -49,7 +49,7 @@ module.exports = function(app, passport) {
 
     // process the signup form
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect : '/games', // redirect to the secure profile section
+        successRedirect : '/finalstage', // redirect to the secure profile section
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
@@ -216,73 +216,171 @@ module.exports = function(app, passport) {
         });
     });
 
-    app.get('/finalstage', function(req, res) {
-        var collection = db_games.get('usercollection');
-        collection.find({},{},function(e,docs){
-            res.render('finalstage', {
-                "games" : docs
-            });
+    app.get('/finalstage', isLoggedIn, function(req, res) {
+        var collection = db_finalstageresult.get('usercollection');
+        collection.count({'username' : req.user.local.email},function(e,count){
+            if (count == 0) {
+                res.render('finalstage');
+            }
+            else {
+                res.render('finalstageresult');
+            }
         });
     });
 
-    app.post('/finalstageresult', function(req, res) {
-        console.log("finalstageresult: " + JSON.stringify(req.body));
-
+    app.post('/finalstageresult', isLoggedIn, function(req, res) {
         var finalstage = [];
         var tempStr = "";
         var lastTeam = "";
+        var p = "";
+        var ot = "";
+        var ft = "";
 
         for (var param in req.body) {
             var str = param.split("_");
 
-            console.log(str[0], str[1], str[0].indexOf(lastTeam));
+            console.log(str[0], str[1], str[0].indexOf(lastTeam), lastTeam, str[0] != lastTeam);
 
             if (lastTeam == "" || str[0].indexOf(lastTeam) == -1) {
-                console.log("str[0].indexOf(lastTeam) == -1");
+                if (lastTeam.length > 0 && str[0] != lastTeam) {
+                    tempStr += ft;
 
-                if (lastTeam.length > 0) {
-                    finalstage.push(tempStr);
+                    if (ot.length > 0) {
+                        tempStr += ":" + ot;
+                    }
+                    if (p.length > 0) {
+                        tempStr += ":" + p;
+                    }
+
+                    finalstage.push(tempStr.split(":"));
+                    p = "";
+                    ot = "";
+                    ft = "";
                 }
 
                 tempStr = str[0] + ":";
+                tempStr += getCountryName(str[0]) + ":";
                 lastTeam = str[0];
             }
 
             if (str[1].indexOf("P") > -1) {
-                tempStr += req.body[param] + ":";
+                p = req.body[param];
             }
 
             if (str[1].indexOf("OT") > -1) {
-                tempStr += req.body[param] + ":";
-                count++;  
+                ot = req.body[param];
             }
 
             if (str[1].indexOf("FT") > -1) {
-                tempStr += req.body[param];
+                ft =  req.body[param];
             }
         }
 
-        finalstage.push(tempStr);
-
-        console.log("Skriver ut finalstage");
-
-        for (var elem in finalstage) {
-            console.log(elem, finalstage[elem]);
+        tempStr += ft;
+        if (ot.length > 0) {
+            tempStr += ":" + ot;
         }
+        if (p.length > 0) {
+            tempStr += ":" + p;
+        }
+
+        finalstage.push(tempStr.split(":"));
+
+        var collection = db_finalstageresult.get('usercollection');
+        var uuid1 = uuid.v4();
+        var d = new Date();
+        var date = d.toISOString(); 
+
+        // Submit to the DB
+        collection.insert({
+            "username" : req.user.local.email,
+            "uuid" : uuid1,
+            "created" : date,
+            "fs0" : finalstage[0],
+            "fs1" : finalstage[1],
+            "fs2" : finalstage[2],
+            "fs3" : finalstage[3],
+            "fs4" : finalstage[4],
+            "fs5" : finalstage[5],
+            "fs6" : finalstage[6],
+            "fs7" : finalstage[7],
+            "fs8" : finalstage[8],
+            "fs9" : finalstage[9],
+            "fs10" : finalstage[10],
+            "fs11" : finalstage[11],
+            "fs12" : finalstage[12],
+            "fs13" : finalstage[13],
+            "fs14" : finalstage[14],
+            "fs15" : finalstage[15],
+            "fs16" : finalstage[16],
+            "fs17" : finalstage[17],
+            "fs18" : finalstage[18],
+            "fs19" : finalstage[19],
+            "fs20" : finalstage[20],
+            "fs21" : finalstage[21],
+            "fs22" : finalstage[22],
+            "fs23" : finalstage[23],
+            "fs24" : finalstage[24],
+            "fs25" : finalstage[25],
+            "fs26" : finalstage[26],
+            "fs27" : finalstage[27],
+            "fs28" : finalstage[28],
+            "fs29" : finalstage[29],
+            "fs30" : finalstage[30],
+            "fs31" : finalstage[31]
+        }, function (err, doc) {
+            if (err) {
+                // If it failed, return error
+                res.send("There was a problem adding the information to the database.");
+            }
+            else {
+                // If it worked, set the header so the address bar doesn't still say /adduser
+                res.location("finalstageresult");
+                // And forward to success page
+                res.redirect("finalstageresult");
+            }
+        });
 
     });
 
-    app.get('/finalstageresult', function(req, res) {
+    app.get('/finalstageresult', isLoggedIn, function(req, res) {
+        var id = req.query.id;
+
         var col_finalstageresult = db_finalstageresult.get('usercollection');
         var col_games = db_games.get('usercollection');
-        col_games.find({},{},function(e,games){
-            col_finalstageresult.find({},{},function(e,docs){
-                res.render('finalstageresult', {
-                    "result" : docs,
-                    "games" : games
-                });
+        if (id != null) {
+            col_finalstageresult.findOne({'uuid' : id},{},function(e,docs){
+                if (docs) {
+                    col_games.find({},{},function(e,games){
+                        res.render('finalstageresult', {
+                            "result" : docs,
+                            "games" : games
+                        });
+                    });
+                }
+                else {
+                    res.render('leaderboard');
+                }
+                
             });
-        });
+        }
+        else {
+            col_finalstageresult.findOne({'username' : req.user.local.email},function(e,docs){
+                console.log("get:finalstageresult  " + docs);
+
+                if (docs) {
+                    col_games.find({},{},function(e,games){
+                        res.render('finalstageresult', {
+                            "result" : docs,
+                            "games" : games
+                        });
+                    });
+                }
+                else {
+                    res.render('finalstage');
+                }
+            });
+        }
     });
 
     /* GET Userlist page. */
@@ -544,4 +642,41 @@ function isLoggedIn(req, res, next) {
 
     // if they aren't redirect them to the home page
     res.redirect('/');
+}
+
+function getCountryName(country) {
+    if (country == "BRA")
+        return "Brazil";
+    if (country == "CHI")
+        return "Chile";
+    if (country == "COL")
+        return "Colombia";
+    if (country == "URU")
+        return "Uruguay";
+    if (country == "FRA")
+        return "France";
+    if (country == "NGA")
+        return "Nigeria";
+    if (country == "SUI")
+        return "Switzerland";
+    if (country == "NED")
+        return "Netherlands";
+    if (country == "MEX")
+        return "Mexico";
+    if (country == "CRC")
+        return "Costa Rica";
+    if (country == "GRE")
+        return "Greece";
+    if (country == "ARG")
+        return "Argentina";
+    if (country == "GER")
+        return "Germany";
+    if (country == "BEL")
+        return "Belgia";
+    if (country == "ALG")
+        return "Algeria";
+    if (country == "USA")
+        return "USA";
+
+    return "";
 }

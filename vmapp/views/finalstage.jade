@@ -4,7 +4,6 @@ block content
   h1 Fill in your final stage prediction
 
   form(name="finalStageForm" method="post" action="/finalstageresult")  
-      input(type="submit" id="finalStageButton")
       div(class="round") Round of 16
         div(class="match" style="height: 120px;")
             div(class="teamContainer np" style="top: 50px;")
@@ -389,3 +388,5 @@ block content
                         label OT
                     div(class="score" id="scoreFT_FF2")
                         label FT
+        div(class="submitScores")
+            input(type="submit" id="finalStageButton" value="Submit Scores") 

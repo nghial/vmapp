@@ -354,8 +354,12 @@ module.exports = function(app, passport) {
         var col_finalstageresult = db_finalstageresult.get('usercollection');
         var col_games = db_games.get('usercollection');
         if (id != null) {
-            col_finalstageresult.find({'uuid' : id},{},function(e,docs){
-                if (docs) {
+            col_finalstageresult.find({'uuid' : id}, {}, function(e,docs){
+                if (!e) {
+                    res.location("finalstage");
+                    res.redirect("finalstage");
+                }
+                else {
                     col_games.find({},{},function(e,games){
                         res.render('finalstageresult', {
                             "result" : docs,
@@ -363,26 +367,21 @@ module.exports = function(app, passport) {
                         });
                     });
                 }
-                else {
-                    res.location("finalstage");
-                    res.redirect("finalstage");
-                }
-                
             });
         }
         else {
             col_finalstageresult.find({'username' : req.user.local.email}, {}, function(e,docs){
-                if (docs) {
+                if (!e) {
+                    res.location("finalstage");
+                    res.redirect("finalstage");
+                }
+                else {
                     col_games.find({},{},function(e,games){
                         res.render('finalstageresult', {
                             "result" : docs,
                             "games" : games
                         });
                     });
-                }
-                else {
-                    res.location("finalstage");
-                    res.redirect("finalstage");
                 }
             });
         }

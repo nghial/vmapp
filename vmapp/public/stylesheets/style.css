@@ -13,8 +13,11 @@ input {
 }
 
 input#finalStageButton {
-    width: 65px;
+    width: 315px;
+    height: 40px;
     border: 10px;
+    background-color: rgb(31, 211, 31);
+    font-weight: bold;
 }
 
 #test td{
@@ -217,6 +220,11 @@ input#finalStageButton {
 .matchFinal {
     position: relative;
     margin-top: 430px;
+}
+
+.submitScores {
+    position: relative;
+    margin-top: 65px;
 }
 
 .team:first-child {

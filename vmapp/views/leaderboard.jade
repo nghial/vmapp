@@ -30,11 +30,10 @@ block content
                             p=_place
                         //p='(' + (i+1) + ')'
                     td
-                        a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")
-                            p=entry.value.name + ' ['+entry.value.company+']'
+                        p=entry.value.name + ' ['+entry.value.company+']'
                     td 
-                        p=entry.value.groupPoints
-                    //td
-                        //p=entry.value.finalPoints
+                        a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.groupPoints
+                    td
+                        a(href="/finalstageresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.finalPoints
                     //td
                         //p=entry.value.totalPoints

@@ -24,7 +24,7 @@ block content
                     td
                         if entry.value.totalPoints != _oldpoints
                             - _oldpoints = entry.value.totalPoints
-                            - _place = i +1
+                            - _place = i + 1
                             p=_place
                         else
                             p=_place
@@ -34,6 +34,6 @@ block content
                     td 
                         a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.groupPoints
                     td
-                        a(href="/finalstageresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.finalPoints
-                    //td
-                        //p=entry.value.totalPoints
+                        a(href="/finalstageresult?id=" + entry.value.finalUuid, id="linkToUser")=entry.value.finalPoints
+                    td
+                        p=entry.value.totalPoints

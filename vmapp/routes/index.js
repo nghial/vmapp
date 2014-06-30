@@ -121,7 +121,7 @@ module.exports = function(app, passport) {
 
            var mapFinal = function() {
                                 var key = this.name;
-                                var values = {finalPoints: this.points};
+                                var values = {finalPoints: this.points, finalUuid: this.uuid};
                                 emit(key, values);
                             };
 
@@ -129,13 +129,15 @@ module.exports = function(app, passport) {
                                         var result = {};
                                         values.forEach(function(value) {
                                             for (field in value) {
-                                                result[field] = value[field];
+                                                var tmp = field;
 
-                                                if (field == 'groupPoints' || field == 'finalPoints'){
+                                                result[tmp] = value[tmp];
+
+                                                if (tmp == 'groupPoints' || tmp == 'finalPoints'){
                                                     if (result.hasOwnProperty('totalPoints')){
-                                                        result['totalPoints'] += value[field];
+                                                        result['totalPoints'] += value[tmp];
                                                     }else{
-                                                      result['totalPoints'] = value[field];  
+                                                        result['totalPoints'] = value[tmp];  
                                                     }
                                                     
                                                 }
@@ -157,7 +159,7 @@ module.exports = function(app, passport) {
                     reduceLeaderboard,
                     { 'out': {'replace':"temp_lb_map_reduce"} },
                     function(err, innerCollection){
-                        dbClient.collection('usercollection', function(err, collection) {
+                        dbClient.collection('finalstage', function(err, collection) {
 
                             collection.mapReduce(
                                 mapFinal,
@@ -166,7 +168,7 @@ module.exports = function(app, passport) {
                                 function(err, reducedCollection){
 
                                     db_leaderboard.get('temp_lb_map_reduce').find(
-                                        {$query: filter, $orderby: {  'value.totalPoints' : -1 }},
+                                        {$query: filter, $orderby: {  'value.totalPoints' : -1, 'value.groupPoints' : -1 }},
                                         {},
                                         function(e,docs){
                                             console.log(docs);

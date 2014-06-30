@@ -18,29 +18,34 @@ finalstageresult_col.find({},{},function(e,finaldocs){
             console.log("Processing results");
             
             for (elem in gamesdocs) {
-                if (gamesdocs[elem].match_id > 48 && gamesdocs[elem].score1 != null) {
+                if (gamesdocs[elem].match_id > 48) {
                     var gamesScore = gamesdocs[elem];
-                    console.log(gamesScore.team1_code + "-" + gamesScore.team2_code);
-                    var userScore = getResultFromUser(count++, document);
+                    console.log(gamesScore.match_id + ": " + gamesScore.team1_code + "-" + gamesScore.team2_code);
 
-                    console.log("From user: ");
-                    console.log(userScore[0] + "-" + userScore[1]);
+                    if (gamesdocs[elem].score1 != null) {
+                        var userScore = getResultFromUser(count, document);
 
-                    //Calculate result
-                    score += countRightPredictionOnEachPeriod(userScore[0], userScore[1], gamesScore);
+                        console.log("From user: ");
+                        console.log(userScore[0] + "-" + userScore[1]);
 
-                    //Riktig vinner
-                    console.log("Score (after countRightPredictionOnEachPeriod): " + score);
+                        //Calculate result
+                        score += countRightPredictionOnEachPeriod(userScore[0], userScore[1], gamesScore);
 
-                    //Riktig Res
-                    score += userHasRightResult(userScore[0], userScore[1], gamesScore);
+                        //Riktig vinner
+                        console.log("Score (after countRightPredictionOnEachPeriod): " + score);
 
-                    //Riktig vinner
-                    console.log("Score (after userHasRightResult): " + score);
+                        //Riktig Res
+                        score += userHasRightResult(userScore[0], userScore[1], gamesScore);
 
-                    score += getWinnerTeamBasedOnResult(userScore[0], userScore[1], gamesScore);
+                        //Riktig vinner
+                        console.log("Score (after userHasRightResult): " + score);
 
-                    console.log("Score (after getWinnerTeamBasedOnResult): " + score);
+                        score += getWinnerTeamBasedOnResult(userScore[0], userScore[1], gamesScore);
+
+                        console.log("Score (after getWinnerTeamBasedOnResult): " + score);
+                    }
+
+                    count++;
                 }
             }
 

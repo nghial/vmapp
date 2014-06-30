@@ -14,8 +14,7 @@ collection.find({},{},function(e,docs){
                 //console.log(document.username);
                 var points = 0;
 
-
-                for(var i = 1; i <= 15; i++){
+                for(var i = 1; i <= 48; i++){
                     var date_game1 = new Date("2014-06-12T20:00:00.000Z");
                     var date_user = new Date(document.created);
  
@@ -31,7 +30,13 @@ collection.find({},{},function(e,docs){
                     else {
                         var scoresFromUser = getResultFromUser(i, document);
                         docs2.forEach(function(document2) {
-                            if(document2.match_id == i) {  
+                            if(document2.match_id == i) {
+                // Fixing wrong result in db
+                if (document2.match_id == 38) {
+                    var temp = scoresFromUser[0];
+                    scoresFromUser[0] = scoresFromUser[1];
+                    scoresFromUser[1] = temp;
+                } 
                                 
                                 if (document2.score1 != null && document2.score2 != null) {
 
@@ -67,8 +72,8 @@ collection.find({},{},function(e,docs){
             collection3.insert({
                 "name" : res[0],
                 "uuid" : res[1],
-                "points" : parseInt(res[2])
-                "company": 
+                "points" : parseInt(res[2]),
+                "company": res[3]
             }, function (err, doc) {
                 if (err) {
                     // If it failed, return error

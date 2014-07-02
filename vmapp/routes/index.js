@@ -129,39 +129,15 @@ module.exports = function(app, passport) {
                                         var result = {};
                                         values.forEach(function(value) {
                                             for (field in value) {
-                                                var tmp = field;
-
-                                                result[tmp] = value[tmp];
-
-                                                if (tmp == 'groupPoints' || tmp == 'finalPoints'){
-                                                    if (result.hasOwnProperty('totalPoints')){
-                                                        //result['totalPoints'] += value[tmp];
-                                                    }else{
-                                                        //result['totalPoints'] = value[tmp];  
-                                                    }
-                                                    
-                                                }
+                                                result[field] = value[field];                                                
                                             }
                                         });
 
                                         return result;
                                     };
 
-            var finalizeLeaderboard = function(key, reducedVal) {
-                /*
-                                        var result = {};
-                                        reducedVal.forEach(function(value) {
-                                            for (field in value) {
-                                                result[field] = value[field];  
-                                            }
-                                        });
-*/
-/*
-                                        if (!result.hasOwnProperty('totalPoints')){
-                                            result['totalPoints2'] = 0;
-                                        }
+            var finalizeLeaderboard = function(key, reducedVal) {                
 
-*/
                                         if (typeof(reducedVal.groupPoints) !== 'undefined' && typeof(reducedVal.finalPoints) !== 'undefined'){
                                             reducedVal.totalPoints = reducedVal.groupPoints + reducedVal.finalPoints;
                                         }else if (typeof(reducedVal.groupPoints) === 'undefined' && typeof(reducedVal.finalPoints) !== 'undefined'){
@@ -172,9 +148,6 @@ module.exports = function(app, passport) {
                                             reducedVal.totalPoints = reducedVal.groupPoints;
                                         }
 
-
-
-                                        
                                         return reducedVal;
                                     };
 

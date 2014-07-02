@@ -110,7 +110,7 @@ module.exports = function(app, passport) {
             var filter = {};
 
             if(req.query.company != undefined && req.query.company != 'all'){               
-                filter = {'company': req.query.company};               
+                filter = {'value.company': req.query.company};               
             }        
 
             var mapGroup = function() {
@@ -121,7 +121,7 @@ module.exports = function(app, passport) {
 
            var mapFinal = function() {
                                 var key = this.name;
-                                var values = {finalPoints: this.points, finalUuid: this.uuid};
+                                var values = {finalPoints: this.points, name: this.name, finalUuid: this.uuid, company: this.company};
                                 emit(key, values);
                             };
 
@@ -135,9 +135,9 @@ module.exports = function(app, passport) {
 
                                                 if (tmp == 'groupPoints' || tmp == 'finalPoints'){
                                                     if (result.hasOwnProperty('totalPoints')){
-                                                        result['totalPoints'] += value[tmp];
+                                                        //result['totalPoints'] += value[tmp];
                                                     }else{
-                                                        result['totalPoints'] = value[tmp];  
+                                                        //result['totalPoints'] = value[tmp];  
                                                     }
                                                     
                                                 }
@@ -145,6 +145,37 @@ module.exports = function(app, passport) {
                                         });
 
                                         return result;
+                                    };
+
+            var finalizeLeaderboard = function(key, reducedVal) {
+                /*
+                                        var result = {};
+                                        reducedVal.forEach(function(value) {
+                                            for (field in value) {
+                                                result[field] = value[field];  
+                                            }
+                                        });
+*/
+/*
+                                        if (!result.hasOwnProperty('totalPoints')){
+                                            result['totalPoints2'] = 0;
+                                        }
+
+*/
+                                        if (typeof(reducedVal.groupPoints) !== 'undefined' && typeof(reducedVal.finalPoints) !== 'undefined'){
+                                            reducedVal.totalPoints = reducedVal.groupPoints + reducedVal.finalPoints;
+                                        }else if (typeof(reducedVal.groupPoints) === 'undefined' && typeof(reducedVal.finalPoints) !== 'undefined'){
+                                            //reducedVal.groupPoints = 0;
+                                            reducedVal.totalPoints = reducedVal.finalPoints;
+                                        }else if (typeof(reducedVal.groupPoints) !== 'undefined' && typeof(reducedVal.finalPoints) === 'undefined'){
+                                            //reducedVal.finalPoints = 0;
+                                            reducedVal.totalPoints = reducedVal.groupPoints;
+                                        }
+
+
+
+                                        
+                                        return reducedVal;
                                     };
 
         db.open(function(error, dbClient) {
@@ -157,14 +188,14 @@ module.exports = function(app, passport) {
                 collection.mapReduce(
                     mapGroup,
                     reduceLeaderboard,
-                    { 'out': {'replace':"temp_lb_map_reduce"} },
+                    { 'out': {'replace':"temp_lb_map_reduce"}, finalize: finalizeLeaderboard },
                     function(err, innerCollection){
                         dbClient.collection('finalstage', function(err, collection) {
 
                             collection.mapReduce(
                                 mapFinal,
                                 reduceLeaderboard,
-                                { out: {reduce:"temp_lb_map_reduce"} },
+                                { out: {reduce:"temp_lb_map_reduce"}, finalize: finalizeLeaderboard },
                                 function(err, reducedCollection){
 
                                     db_leaderboard.get('temp_lb_map_reduce').find(
@@ -177,9 +208,13 @@ module.exports = function(app, passport) {
                                                 "_place":0,
                                                 "_oldpoints":undefined
                                             });
-                                        }).toArray; 
 
-                                    db.close();
+                                            db.dropCollection('temp_lb_map_reduce', null);
+                                            db.close();
+
+                                        }); 
+
+                                   
                                 });
 
                         }); 

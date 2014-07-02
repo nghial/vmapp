@@ -31,21 +31,9 @@ block content
                         //p='(' + (i+1) + ')'
                     td
                         p=entry.value.name + ' ['+entry.value.company+']'
+                    td 
+                        a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.groupPoints
                     td
-                    
-                        #user
-                          if entry.value.groupPoints
-                            a(href="/gamesresult?id=" + entry.value.uuid, id="linkToUser")=entry.value.groupPoints
-                          else
-                            =0
-     
-                    td
-                        #user
-                          if entry.value.finalPoints
-                            a(href="/finalstageresult?id=" + entry.value.finalUuid, id="linkToUser")=entry.value.finalPoints
-                          else
-                            =0
-
-                        
+                        a(href="/finalstageresult?id=" + entry.value.finalUuid, id="linkToUser")=entry.value.finalPoints
                     td
                         p=entry.value.totalPoints

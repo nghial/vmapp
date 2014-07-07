@@ -43,6 +43,11 @@ finalstageresult_col.find({},{},function(e,finaldocs){
                         score += getWinnerTeamBasedOnResult(userScore[0], userScore[1], gamesScore);
 
                         console.log("Score (after getWinnerTeamBasedOnResult): " + score);
+
+                        if (gamesScore.match_id > 56) {
+                            score += userHasRightTeam(userScore[0], userScore[1], gamesScore);
+                            console.log("Score (after userHasRightTeam): " + score);
+                        }
                     }
 
                     count++;
@@ -73,6 +78,20 @@ finalstageresult_col.find({},{},function(e,finaldocs){
         console.log("Finished");
     });
 });
+
+function userHasRightTeam(userScore1, userScore2, gamesScore) {
+    var score = 0;
+
+    if (userScore1[0] == gamesScore.team1_code) {
+        score++;
+    }
+
+    if (userScore2[0] == gamesScore.team2_code) {
+        score++;
+    }
+
+    return score;
+}
 
 function countRightPredictionOnEachPeriod(userScore1, userScore2, gamesScore) {
     var score = 0;

@@ -76,3 +76,77 @@ block content
                         td
                             &nbsp;
                             &nbsp;
+    table#gamesoverview(class="group")
+        thead
+            h1.
+                Quarter finals
+        tbody
+            tr
+            each game, i in games
+                if game.match_id > 56 && game.match_id <= 60
+                    tr#games
+                        td
+                            img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                        td#teamintable
+                            p=game.team1_title
+                        td#scoreintable                            
+                            a(href=game.url target="_blank")
+                                if game.score1 != null
+                                    p(style="font-size:20px; text-align: center")=game.score1 + " - " + game.score2
+                                    if game.score1ot != null
+                                        p(style="font-size:10px; text-align: center")="(Goals in extra time " + game.score1ot + " - " + game.score2ot + ")"
+                                        if game.score1p != null
+                                            p(style="font-size:10px; text-align: center")="(Goals in penalties " + game.score1p + " - " + game.score2p + ")"
+                                if game.score1 == null
+                                    p(style="font-size:20px; text-align: center")=game.channel
+                                    p(style="font-size:20px; text-align: center")=game.play_at + " " + game.time
+                        td#teamintable
+                            p(style="text-align: right")=game.team2_title
+                        td
+                            img(src="images/" + game.team2_code + ".svg.png" height="50" width="50" align="right")
+                    tr
+                        td(colspan="5" style="text-align:center")
+                            if game.score1 != null
+                                p=game.channel
+                                p=game.play_at + " " + game.time
+                    tr
+                        td
+                            &nbsp;
+                            &nbsp;
+    table#gamesoverview(class="group")
+        thead
+            h1.
+                Semi finals
+        tbody
+            tr
+            each game, i in games
+                if game.match_id == 61 || game.match_id == 62
+                    tr#games
+                        td
+                            img(src="images/" + game.team1_code + ".svg.png" height="50" width="50")
+                        td#teamintable
+                            p=game.team1_title
+                        td#scoreintable                            
+                            a(href=game.url target="_blank")
+                                if game.score1 != null
+                                    p(style="font-size:20px; text-align: center")=game.score1 + " - " + game.score2
+                                    if game.score1ot != null
+                                        p(style="font-size:10px; text-align: center")="(Goals in extra time " + game.score1ot + " - " + game.score2ot + ")"
+                                        if game.score1p != null
+                                            p(style="font-size:10px; text-align: center")="(Goals in penalties " + game.score1p + " - " + game.score2p + ")"
+                                if game.score1 == null
+                                    p(style="font-size:20px; text-align: center")=game.channel
+                                    p(style="font-size:20px; text-align: center")=game.play_at + " " + game.time
+                        td#teamintable
+                            p(style="text-align: right")=game.team2_title
+                        td
+                            img(src="images/" + game.team2_code + ".svg.png" height="50" width="50" align="right")
+                    tr
+                        td(colspan="5" style="text-align:center")
+                            if game.score1 != null
+                                p=game.channel
+                                p=game.play_at + " " + game.time
+                    tr
+                        td
+                            &nbsp;
+                            &nbsp;
